@@ -211,7 +211,7 @@ Apache 2.0 — see [LICENSE](LICENSE) for details.
   title = {MyQuat: Quantum Computing Library in Rust},
   year = {2026},
   version = {0.1.0},
-  url = {https://github.com/yourusername/myquat}
+  url = {https://github.com/mindmemory-ai/myquat}
 }
 ```
 
@@ -220,4 +220,4 @@ Apache 2.0 — see [LICENSE](LICENSE) for details.
 ## Contact
 
 - **Author:** gA4ss
-- **Email:** wenbin.yan@colorado.edu
+- **Email:** logic.yan@me.com

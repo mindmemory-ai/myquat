@@ -322,7 +322,7 @@ rustup component add rustfmt clippy
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/myquat.git
+git clone https://github.com/mindmemory-ai/myquat.git
 cd myquat
 
 # Build
@@ -502,7 +502,7 @@ criterion_main!(benches);
 
 - GitHub Issues: Bug reports and discussions
 - Pull Requests: Code contributions
-- Email: wenbin.yan@colorado.edu
+- Email: logic.yan@me.com
 
 ## License
 

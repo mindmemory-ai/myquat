@@ -15,7 +15,7 @@ shows which versions are currently receiving security patches.
 
 Instead, please report security vulnerabilities privately by email to:
 
-**fr1140m@gmail.com**
+**logic.yan@me.com**
 
 Please include the following in your report:
 
