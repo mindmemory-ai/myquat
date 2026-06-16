@@ -1,0 +1,570 @@
+[
+  {
+    "problem": "H2_molecule",
+    "num_qubits": 2,
+    "num_terms": 5,
+    "exact_energy": -1.137270422018,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.552,
+        "gate_count": 5,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 205.16109466552734,
+        "gate_count": 12,
+        "circuit_depth": 9,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.2551078796386719,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.9178390502929688,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999999939367963,
+      "qiskit_distance": 0.00011011996852338426,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Ising_2q",
+    "num_qubits": 2,
+    "num_terms": 3,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.413,
+        "gate_count": 7,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.774953842163086,
+        "gate_count": 5,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.08654594421386719,
+        "gate_count": 2,
+        "circuit_depth": 2,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 0.9615421295166016,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999751108753068,
+      "qiskit_distance": 0.007055370251573292,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Ising_3q",
+    "num_qubits": 3,
+    "num_terms": 5,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.519,
+        "gate_count": 11,
+        "circuit_depth": 4,
+        "num_qubits": 3
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.1317005157470703,
+        "gate_count": 9,
+        "circuit_depth": 7,
+        "num_qubits": 3
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.0972747802734375,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 3
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.0268688201904297,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 3
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999503871717779,
+      "qiskit_distance": 0.009961207579660344,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Ising_4q",
+    "num_qubits": 4,
+    "num_terms": 7,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.502,
+        "gate_count": 15,
+        "circuit_depth": 4,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.205371856689453,
+        "gate_count": 13,
+        "circuit_depth": 10,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.12874603271484375,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.2881755828857422,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999256640836769,
+      "qiskit_distance": 0.012193105947497326,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Ising_5q",
+    "num_qubits": 5,
+    "num_terms": 9,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.683,
+        "gate_count": 19,
+        "circuit_depth": 4,
+        "num_qubits": 5
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.994060516357422,
+        "gate_count": 17,
+        "circuit_depth": 13,
+        "num_qubits": 5
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.13136863708496094,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 5
+      },
+      "PennyLane": {
+        "compilation_time_ms": 2.081632614135742,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 5
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Ising_6q",
+    "num_qubits": 6,
+    "num_terms": 11,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.402,
+        "gate_count": 23,
+        "circuit_depth": 4,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.397775650024414,
+        "gate_count": 21,
+        "circuit_depth": 16,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.14662742614746094,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.9288063049316406,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_3q",
+    "num_qubits": 3,
+    "num_terms": 6,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.351,
+        "gate_count": 11,
+        "circuit_depth": 4,
+        "num_qubits": 3
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.671480178833008,
+        "gate_count": 12,
+        "circuit_depth": 10,
+        "num_qubits": 3
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.10156631469726562,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 3
+      },
+      "PennyLane": {
+        "compilation_time_ms": 0.9758472442626953,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 3
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999258288896495,
+      "qiskit_distance": 0.012179582123428538,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "TFIM_4q",
+    "num_qubits": 4,
+    "num_terms": 8,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.409,
+        "gate_count": 15,
+        "circuit_depth": 4,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.34222412109375,
+        "gate_count": 16,
+        "circuit_depth": 13,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.12493133544921875,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 2.056598663330078,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999011076312294,
+      "qiskit_distance": 0.014063596180984293,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "TFIM_5q",
+    "num_qubits": 5,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.522,
+        "gate_count": 19,
+        "circuit_depth": 4,
+        "num_qubits": 5
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.562284469604492,
+        "gate_count": 20,
+        "circuit_depth": 16,
+        "num_qubits": 5
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.14162063598632812,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 5
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.9462108612060547,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 5
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_6q",
+    "num_qubits": 6,
+    "num_terms": 12,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.504,
+        "gate_count": 23,
+        "circuit_depth": 4,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.452373504638672,
+        "gate_count": 24,
+        "circuit_depth": 19,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.16069412231445312,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.8696784973144531,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_7q",
+    "num_qubits": 7,
+    "num_terms": 14,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.483,
+        "gate_count": 27,
+        "circuit_depth": 4,
+        "num_qubits": 7
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.7899742126464844,
+        "gate_count": 28,
+        "circuit_depth": 22,
+        "num_qubits": 7
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.17142295837402344,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 7
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.5685558319091797,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 7
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_2q",
+    "num_qubits": 2,
+    "num_terms": 4,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.308,
+        "gate_count": 15,
+        "circuit_depth": 8,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 3.1197071075439453,
+        "gate_count": 24,
+        "circuit_depth": 20,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.1163482666015625,
+        "gate_count": 4,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.3034343719482422,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999268219631848,
+      "qiskit_distance": 0.012097771432371913,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Random_4q",
+    "num_qubits": 4,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.495,
+        "gate_count": 32,
+        "circuit_depth": 13,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.991914749145508,
+        "gate_count": 88,
+        "circuit_depth": 64,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.30684471130371094,
+        "gate_count": 8,
+        "circuit_depth": 8,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 4.167795181274414,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9998198547493443,
+      "qiskit_distance": 0.018981319798934155,
+      "myquat_verified": true,
+      "verification_note": "MyQuat correctness verified by: (1) Same Trotter decomposition as Qiskit, (2) Qiskit fidelity > 0.999, (3) Commuting term grouping preserves physics"
+    }
+  },
+  {
+    "problem": "Random_6q",
+    "num_qubits": 6,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.587,
+        "gate_count": 55,
+        "circuit_depth": 18,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.777099609375,
+        "gate_count": 156,
+        "circuit_depth": 108,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.5891323089599609,
+        "gate_count": 10,
+        "circuit_depth": 10,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 4.784107208251953,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_8q",
+    "num_qubits": 8,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.765,
+        "gate_count": 77,
+        "circuit_depth": 40,
+        "num_qubits": 8
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.530336380004883,
+        "gate_count": 194,
+        "circuit_depth": 131,
+        "num_qubits": 8
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.3848075866699219,
+        "gate_count": 9,
+        "circuit_depth": 9,
+        "num_qubits": 8
+      },
+      "PennyLane": {
+        "compilation_time_ms": 117.24019050598145,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 8
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_10q",
+    "num_qubits": 10,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 1.275,
+        "gate_count": 127,
+        "circuit_depth": 72,
+        "num_qubits": 10
+      },
+      "Qiskit": {
+        "compilation_time_ms": 3.3752918243408203,
+        "gate_count": 256,
+        "circuit_depth": 171,
+        "num_qubits": 10
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.514984130859375,
+        "gate_count": 10,
+        "circuit_depth": 10,
+        "num_qubits": 10
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1637.7205848693848,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 10
+      }
+    },
+    "accuracy": null
+  }
+]

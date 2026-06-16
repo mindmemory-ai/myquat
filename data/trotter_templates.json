@@ -1,0 +1,117 @@
+{
+  "templates": [
+    {
+      "name": "Standard-First-Order",
+      "description": "First-order Trotter-Suzuki decomposition for generic Hamiltonians",
+      "order": 1,
+      "error_scaling": "O(dt^2)",
+      "use_cases": [
+        "Quick approximations",
+        "Non-commuting Hamiltonians",
+        "Initial circuit generation"
+      ]
+    },
+    {
+      "name": "Symmetric-Second-Order",
+      "description": "Strang splitting formula with symmetric half-steps",
+      "order": 2,
+      "error_scaling": "O(dt^3)",
+      "use_cases": [
+        "Standard time evolution",
+        "Moderate accuracy requirements",
+        "Most common in practice"
+      ],
+      "structure": {
+        "forward_half_steps": "n-1 terms",
+        "full_step": "last term",
+        "backward_half_steps": "n-1 terms in reverse"
+      }
+    },
+    {
+      "name": "Suzuki-Fourth-Order",
+      "description": "Suzuki's fourth-order formula with coefficient p ≈ 0.4145",
+      "order": 4,
+      "error_scaling": "O(dt^5)",
+      "suzuki_coefficient": 0.41449077179437573,
+      "use_cases": [
+        "High accuracy simulations",
+        "Quantum chemistry applications",
+        "Benchmarking studies"
+      ],
+      "structure": {
+        "composition": "S2(p*dt) + S2(p*dt) + S2((1-4p)*dt) + S2(p*dt) + S2(p*dt)",
+        "recursive": true
+      }
+    },
+    {
+      "name": "Suzuki-Sixth-Order",
+      "description": "Sixth-order Suzuki formula for very high accuracy",
+      "order": 6,
+      "error_scaling": "O(dt^7)",
+      "suzuki_coefficient": 0.37307216933481307,
+      "use_cases": [
+        "Extremely high accuracy requirements",
+        "Small time steps impractical",
+        "Research applications"
+      ]
+    }
+  ],
+  "common_hamiltonians": {
+    "ising": {
+      "terms": [
+        {"pauli": "ZZ", "description": "Ising interaction"},
+        {"pauli": "X", "description": "Transverse field"}
+      ],
+      "typical_orders": [1, 2, 4]
+    },
+    "heisenberg": {
+      "terms": [
+        {"pauli": "XX", "description": "X-X coupling"},
+        {"pauli": "YY", "description": "Y-Y coupling"},
+        {"pauli": "ZZ", "description": "Z-Z coupling"}
+      ],
+      "typical_orders": [2, 4]
+    },
+    "molecular": {
+      "terms": [
+        {"pauli": "ZZ", "description": "Two-body interaction"},
+        {"pauli": "Z", "description": "One-body terms"},
+        {"pauli": "ZZZZ", "description": "Four-body interaction"}
+      ],
+      "typical_orders": [2, 4, 6]
+    }
+  },
+  "pattern_signatures": {
+    "first_order": {
+      "gate_count_per_step": "n_terms",
+      "time_factors": [1.0],
+      "symmetry": false
+    },
+    "second_order": {
+      "gate_count_per_step": "2*n_terms - 1",
+      "time_factors": [0.5, 1.0],
+      "symmetry": true,
+      "signature": "forward_half + full + backward_half"
+    },
+    "fourth_order": {
+      "gate_count_per_step": "5 * (2*n_terms - 1)",
+      "time_factors": [0.414, 0.207, 0.086],
+      "symmetry": true,
+      "signature": "nested_S2_composition"
+    }
+  },
+  "detection_heuristics": {
+    "symmetric_structure": "Check if gates appear in reverse order in second half",
+    "time_factor_ratios": "Look for characteristic ratios like 0.5, 0.414",
+    "suzuki_coefficients": [
+      0.41449077179437573,
+      0.37307216933481307,
+      0.35959009351690036,
+      0.35292426990511563
+    ],
+    "gate_pattern_length": "Multiple of (2*n_terms - 1) suggests 2nd order or higher"
+  },
+  "version": "1.0",
+  "created_by": "gA4ss",
+  "purpose": "Reverse extraction pattern matching library"
+}

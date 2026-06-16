@@ -1,0 +1,13 @@
+problem,num_qubits,num_terms,trotter_steps,trotter_order,evolution_time,framework,language,compilation_time_ms,gate_count,circuit_depth,success,error,accuracy_frobenius_error
+H2_4q,4,15,10,1,1.0,MyQuat,Rust,4731.419,377,193,True,,0.00010868613944550669
+H2_4q,4,15,10,1,1.0,TKET,Python,261.74120901850984,329,200,True,,
+LiH_6q,6,28,10,1,1.0,MyQuat,Rust,8838.136,748,437,True,,0.00012279317870146796
+LiH_6q,6,28,10,1,1.0,TKET,Python,603.7270000088029,678,481,True,,
+Heisenberg_4q,4,12,10,1,1.0,MyQuat,Rust,5339.746,592,403,True,,0.10635563650383541
+Heisenberg_4q,4,12,10,1,1.0,TKET,Python,500.1277499832213,344,232,True,,
+Heisenberg_6q,6,18,10,1,1.0,MyQuat,Rust,6948.849,988,587,True,,0.10489989958698363
+Heisenberg_6q,6,18,10,1,1.0,TKET,Python,1003.9887920138426,526,352,True,,
+TFIM_4q,4,7,10,1,1.0,MyQuat,Rust,1154.871,114,57,True,,0.010540154382152653
+TFIM_4q,4,7,10,1,1.0,TKET,Python,54.6423330088146,130,73,True,,
+TFIM_6q,6,11,10,1,1.0,MyQuat,Rust,2187.485,180,81,True,,0.01315365621753971
+TFIM_6q,6,11,10,1,1.0,TKET,Python,140.06320800399408,210,79,True,,

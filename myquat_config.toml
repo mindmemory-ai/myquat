@@ -1,0 +1,38 @@
+# MyQuat 性能配置文件
+# 这个文件控制 MyQuat 库的各种性能优化选项
+
+[parallel]
+# 并行计算配置
+enabled = true                    # 启用并行计算
+num_threads = 0                   # 线程数 (0 = 自动检测)
+min_qubits_for_parallel = 8       # 启用并行的最小量子比特数
+auto_enable = true                # 根据问题规模自动启用
+
+[simd]
+# SIMD 向量化配置
+enabled = true                    # 启用 SIMD 优化
+force_enable = false              # 强制启用 (即使检测失败)
+min_state_size = 256              # 启用 SIMD 的最小状态大小 (8 qubits)
+auto_enable = true                # 根据 CPU 能力自动启用
+
+[gpu]
+# GPU 加速配置
+enabled = true                    # 启用 GPU 加速
+preferred_backend = "Auto"        # 首选后端: Auto, Cuda, OpenCL, ComputeShader, Disabled
+min_qubits_for_gpu = 12           # 启用 GPU 的最小量子比特数
+auto_enable = true                # 根据问题规模自动启用
+fallback_to_cpu = true            # GPU 失败时回退到 CPU
+
+[memory]
+# 内存优化配置
+enable_pools = true               # 启用内存池
+enable_zero_copy = true           # 启用零拷贝操作
+pool_max_size = 1000              # 内存池最大大小
+enable_efficient_state = true    # 启用内存高效状态表示
+
+[cache]
+# 缓存配置
+enabled = true                    # 启用矩阵计算缓存
+max_entries = 1000                # 最大缓存条目数
+max_memory_bytes = 104857600      # 最大内存使用 (100 MB)
+eviction_strategy = "LRU"         # 驱逐策略: LRU, LFU, FIFO, Random

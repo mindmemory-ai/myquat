@@ -1,0 +1,7567 @@
+{
+  "description": "Comprehensive evaluation of the 5-strategy deoptimization pipeline across circuit types, with isolated strategy tests and threshold scans",
+  "experiment": "exp03_deoptimization_pipeline",
+  "isolated_strategy_results": [
+    {
+      "apply_time_us": 16,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.95,
+      "label": "ham_sim_3qb_1steps",
+      "restored_gates": 24,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_3qb_1steps",
+      "restored_gates": 24,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_3qb_1steps",
+      "restored_gates": 24,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6909498069498069,
+      "label": "ham_sim_3qb_1steps",
+      "restored_gates": 19,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_3qb_1steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 36,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.95,
+      "label": "ham_sim_3qb_2steps",
+      "restored_gates": 48,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_3qb_2steps",
+      "restored_gates": 48,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_3qb_2steps",
+      "restored_gates": 48,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5955409399547331,
+      "label": "ham_sim_3qb_2steps",
+      "restored_gates": 38,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_3qb_2steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 77,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9500000000000001,
+      "label": "ham_sim_3qb_3steps",
+      "restored_gates": 72,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_3qb_3steps",
+      "restored_gates": 72,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_3qb_3steps",
+      "restored_gates": 72,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 14,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5957290277290277,
+      "label": "ham_sim_3qb_3steps",
+      "restored_gates": 57,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_3qb_3steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 25,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9499999999999998,
+      "label": "ham_sim_4qb_1steps",
+      "restored_gates": 36,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_4qb_1steps",
+      "restored_gates": 36,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_4qb_1steps",
+      "restored_gates": 36,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5552744360902255,
+      "label": "ham_sim_4qb_1steps",
+      "restored_gates": 30,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_4qb_1steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 56,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9500000000000001,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5558059975520195,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 60,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 87,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9500000000000001,
+      "label": "ham_sim_4qb_3steps",
+      "restored_gates": 108,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_4qb_3steps",
+      "restored_gates": 108,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_4qb_3steps",
+      "restored_gates": 108,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 18,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5559777327935223,
+      "label": "ham_sim_4qb_3steps",
+      "restored_gates": 90,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_4qb_3steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 35,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.95,
+      "label": "ham_sim_5qb_1steps",
+      "restored_gates": 48,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_5qb_1steps",
+      "restored_gates": 48,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_5qb_1steps",
+      "restored_gates": 48,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.531158701763353,
+      "label": "ham_sim_5qb_1steps",
+      "restored_gates": 40,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_5qb_1steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 76,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9500000000000001,
+      "label": "ham_sim_5qb_2steps",
+      "restored_gates": 96,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_5qb_2steps",
+      "restored_gates": 96,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_5qb_2steps",
+      "restored_gates": 96,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 17,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5316098295829019,
+      "label": "ham_sim_5qb_2steps",
+      "restored_gates": 80,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_5qb_2steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 177,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9499999999999998,
+      "label": "ham_sim_5qb_3steps",
+      "restored_gates": 144,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_5qb_3steps",
+      "restored_gates": 144,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_5qb_3steps",
+      "restored_gates": 144,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 28,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5317567084078711,
+      "label": "ham_sim_5qb_3steps",
+      "restored_gates": 120,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 12,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_5qb_3steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 46,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.95,
+      "label": "ham_sim_6qb_1steps",
+      "restored_gates": 60,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_6qb_1steps",
+      "restored_gates": 60,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_6qb_1steps",
+      "restored_gates": 60,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 11,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5149974489795919,
+      "label": "ham_sim_6qb_1steps",
+      "restored_gates": 50,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_6qb_1steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 99,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.95,
+      "label": "ham_sim_6qb_2steps",
+      "restored_gates": 120,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_6qb_2steps",
+      "restored_gates": 120,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_6qb_2steps",
+      "restored_gates": 120,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 37,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.5153837668870366,
+      "label": "ham_sim_6qb_2steps",
+      "restored_gates": 100,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_6qb_2steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 149,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9499999999999997,
+      "label": "ham_sim_6qb_3steps",
+      "restored_gates": 180,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_6qb_3steps",
+      "restored_gates": 180,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_6qb_3steps",
+      "restored_gates": 180,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 35,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.515510132557696,
+      "label": "ham_sim_6qb_3steps",
+      "restored_gates": 150,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 14,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_6qb_3steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 65,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9500000000000001,
+      "label": "ham_sim_8qb_1steps",
+      "restored_gates": 84,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_8qb_1steps",
+      "restored_gates": 84,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_8qb_1steps",
+      "restored_gates": 84,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 17,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.49473028008857506,
+      "label": "ham_sim_8qb_1steps",
+      "restored_gates": 70,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_8qb_1steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 169,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9499999999999998,
+      "label": "ham_sim_8qb_2steps",
+      "restored_gates": 168,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_8qb_2steps",
+      "restored_gates": 168,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_8qb_2steps",
+      "restored_gates": 168,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 32,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.49502712609970684,
+      "label": "ham_sim_8qb_2steps",
+      "restored_gates": 140,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_8qb_2steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 241,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.9499999999999996,
+      "label": "ham_sim_8qb_3steps",
+      "restored_gates": 252,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.0,
+      "label": "ham_sim_8qb_3steps",
+      "restored_gates": 252,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 12,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6666666666666666,
+      "label": "ham_sim_8qb_3steps",
+      "restored_gates": 252,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 47,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.4951247466000118,
+      "label": "ham_sim_8qb_3steps",
+      "restored_gates": 210,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 19,
+      "circuit_type": "hamiltonian_simulation",
+      "confidence": 0.6833333333333333,
+      "label": "ham_sim_8qb_3steps",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d2",
+      "restored_gates": 16,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d2",
+      "restored_gates": 16,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_3qb_d2",
+      "restored_gates": 16,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.904,
+      "label": "vqe_esu2_3qb_d2",
+      "restored_gates": 16,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8583333333333332,
+      "label": "vqe_esu2_3qb_d2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 16,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d3",
+      "restored_gates": 24,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d3",
+      "restored_gates": 24,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_3qb_d3",
+      "restored_gates": 24,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.91,
+      "label": "vqe_esu2_3qb_d3",
+      "restored_gates": 24,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8583333333333332,
+      "label": "vqe_esu2_3qb_d3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 31,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d5",
+      "restored_gates": 40,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_3qb_d5",
+      "restored_gates": 40,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_3qb_d5",
+      "restored_gates": 40,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8822857142857143,
+      "label": "vqe_esu2_3qb_d5",
+      "restored_gates": 40,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8583333333333332,
+      "label": "vqe_esu2_3qb_d5",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 16,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d2",
+      "restored_gates": 22,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d2",
+      "restored_gates": 22,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_4qb_d2",
+      "restored_gates": 22,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.904,
+      "label": "vqe_esu2_4qb_d2",
+      "restored_gates": 22,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8515151515151516,
+      "label": "vqe_esu2_4qb_d2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 29,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.91,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8515151515151516,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 45,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d5",
+      "restored_gates": 55,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_4qb_d5",
+      "restored_gates": 55,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_4qb_d5",
+      "restored_gates": 55,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8822857142857143,
+      "label": "vqe_esu2_4qb_d5",
+      "restored_gates": 55,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8515151515151516,
+      "label": "vqe_esu2_4qb_d5",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 27,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d2",
+      "restored_gates": 34,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d2",
+      "restored_gates": 34,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_6qb_d2",
+      "restored_gates": 34,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.904,
+      "label": "vqe_esu2_6qb_d2",
+      "restored_gates": 34,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8450980392156862,
+      "label": "vqe_esu2_6qb_d2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 42,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d3",
+      "restored_gates": 51,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d3",
+      "restored_gates": 51,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_6qb_d3",
+      "restored_gates": 51,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.91,
+      "label": "vqe_esu2_6qb_d3",
+      "restored_gates": 51,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8450980392156862,
+      "label": "vqe_esu2_6qb_d3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 82,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d5",
+      "restored_gates": 85,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_6qb_d5",
+      "restored_gates": 85,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_6qb_d5",
+      "restored_gates": 85,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8822857142857143,
+      "label": "vqe_esu2_6qb_d5",
+      "restored_gates": 85,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8450980392156862,
+      "label": "vqe_esu2_6qb_d5",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 39,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d2",
+      "restored_gates": 46,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d2",
+      "restored_gates": 46,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_8qb_d2",
+      "restored_gates": 46,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.904,
+      "label": "vqe_esu2_8qb_d2",
+      "restored_gates": 46,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8420289855072463,
+      "label": "vqe_esu2_8qb_d2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 63,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d3",
+      "restored_gates": 69,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d3",
+      "restored_gates": 69,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_8qb_d3",
+      "restored_gates": 69,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.91,
+      "label": "vqe_esu2_8qb_d3",
+      "restored_gates": 69,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8420289855072463,
+      "label": "vqe_esu2_8qb_d3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 119,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d5",
+      "restored_gates": 115,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.0,
+      "label": "vqe_esu2_8qb_d5",
+      "restored_gates": 115,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.5,
+      "label": "vqe_esu2_8qb_d5",
+      "restored_gates": 115,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 33,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8822857142857143,
+      "label": "vqe_esu2_8qb_d5",
+      "restored_gates": 115,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 12,
+      "circuit_type": "vqe_efficientsu2",
+      "confidence": 0.8420289855072463,
+      "label": "vqe_esu2_8qb_d5",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d2",
+      "restored_gates": 13,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d2",
+      "restored_gates": 13,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.4444444444444444,
+      "label": "vqe_real_3qb_d2",
+      "restored_gates": 13,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_3qb_d2",
+      "restored_gates": 13,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.721025641025641,
+      "label": "vqe_real_3qb_d2",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 14,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d3",
+      "restored_gates": 18,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d3",
+      "restored_gates": 18,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.3333333333333333,
+      "label": "vqe_real_3qb_d3",
+      "restored_gates": 18,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_3qb_d3",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6666666666666666,
+      "label": "vqe_real_3qb_d3",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 19,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d5",
+      "restored_gates": 28,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d5",
+      "restored_gates": 28,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.2222222222222222,
+      "label": "vqe_real_3qb_d5",
+      "restored_gates": 28,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.9680000000000001,
+      "label": "vqe_real_3qb_d5",
+      "restored_gates": 28,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6428571428571428,
+      "label": "vqe_real_3qb_d5",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 28,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d7",
+      "restored_gates": 38,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_3qb_d7",
+      "restored_gates": 38,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.16666666666666666,
+      "label": "vqe_real_3qb_d7",
+      "restored_gates": 38,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.904,
+      "label": "vqe_real_3qb_d7",
+      "restored_gates": 38,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.593640350877193,
+      "label": "vqe_real_3qb_d7",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d2",
+      "restored_gates": 18,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d2",
+      "restored_gates": 18,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.4166666666666667,
+      "label": "vqe_real_4qb_d2",
+      "restored_gates": 18,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_4qb_d2",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6916666666666667,
+      "label": "vqe_real_4qb_d2",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 16,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d3",
+      "restored_gates": 25,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d3",
+      "restored_gates": 25,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.3125,
+      "label": "vqe_real_4qb_d3",
+      "restored_gates": 25,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_4qb_d3",
+      "restored_gates": 25,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6274166666666667,
+      "label": "vqe_real_4qb_d3",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 28,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d5",
+      "restored_gates": 39,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d5",
+      "restored_gates": 39,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.20833333333333334,
+      "label": "vqe_real_4qb_d5",
+      "restored_gates": 39,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.9680000000000001,
+      "label": "vqe_real_4qb_d5",
+      "restored_gates": 39,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d5",
+      "restored_gates": 39,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 45,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d7",
+      "restored_gates": 53,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_4qb_d7",
+      "restored_gates": 53,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.15625,
+      "label": "vqe_real_4qb_d7",
+      "restored_gates": 53,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.904,
+      "label": "vqe_real_4qb_d7",
+      "restored_gates": 53,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.5790487421383648,
+      "label": "vqe_real_4qb_d7",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 19,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d2",
+      "restored_gates": 28,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d2",
+      "restored_gates": 28,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.3888888888888889,
+      "label": "vqe_real_6qb_d2",
+      "restored_gates": 28,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_6qb_d2",
+      "restored_gates": 28,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6428571428571428,
+      "label": "vqe_real_6qb_d2",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 28,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d3",
+      "restored_gates": 39,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d3",
+      "restored_gates": 39,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.2916666666666667,
+      "label": "vqe_real_6qb_d3",
+      "restored_gates": 39,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 1.0,
+      "label": "vqe_real_6qb_d3",
+      "restored_gates": 39,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.6262820512820513,
+      "label": "vqe_real_6qb_d3",
+      "restored_gates": 1,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 47,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d5",
+      "restored_gates": 61,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d5",
+      "restored_gates": 61,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.19444444444444445,
+      "label": "vqe_real_6qb_d5",
+      "restored_gates": 61,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.9680000000000001,
+      "label": "vqe_real_6qb_d5",
+      "restored_gates": 61,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d5",
+      "restored_gates": 61,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 83,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d7",
+      "restored_gates": 83,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 63,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d7",
+      "restored_gates": 83,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 15,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.14583333333333334,
+      "label": "vqe_real_6qb_d7",
+      "restored_gates": 83,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.904,
+      "label": "vqe_real_6qb_d7",
+      "restored_gates": 83,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 10,
+      "circuit_type": "vqe_realamplitudes",
+      "confidence": 0.0,
+      "label": "vqe_real_6qb_d7",
+      "restored_gates": 83,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 19,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_4qb_2e",
+      "restored_gates": 29,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_4qb_2e",
+      "restored_gates": 29,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.47058823529411764,
+      "label": "vqe_uccsd_4qb_2e",
+      "restored_gates": 29,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.5492248157248157,
+      "label": "vqe_uccsd_4qb_2e",
+      "restored_gates": 29,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.734685598377282,
+      "label": "vqe_uccsd_4qb_2e",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 49,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_6qb_2e",
+      "restored_gates": 63,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_6qb_2e",
+      "restored_gates": 63,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.45714285714285713,
+      "label": "vqe_uccsd_6qb_2e",
+      "restored_gates": 63,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.5234518360321305,
+      "label": "vqe_uccsd_6qb_2e",
+      "restored_gates": 63,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.7295238095238095,
+      "label": "vqe_uccsd_6qb_2e",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 61,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_6qb_3e",
+      "restored_gates": 76,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_6qb_3e",
+      "restored_gates": 76,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.42857142857142855,
+      "label": "vqe_uccsd_6qb_3e",
+      "restored_gates": 76,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 16,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.5256981618077509,
+      "label": "vqe_uccsd_6qb_3e",
+      "restored_gates": 76,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.7229323308270676,
+      "label": "vqe_uccsd_6qb_3e",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 100,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_8qb_2e",
+      "restored_gates": 97,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.0,
+      "label": "vqe_uccsd_8qb_2e",
+      "restored_gates": 97,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.4528301886792453,
+      "label": "vqe_uccsd_8qb_2e",
+      "restored_gates": 97,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 21,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.5097167272314331,
+      "label": "vqe_uccsd_8qb_2e",
+      "restored_gates": 97,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "vqe_uccsd",
+      "confidence": 0.7280684691694221,
+      "label": "vqe_uccsd_8qb_2e",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "qaoa",
+      "confidence": 0.95,
+      "label": "qaoa_3qb_p1",
+      "restored_gates": 16,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_3qb_p1",
+      "restored_gates": 16,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qaoa",
+      "confidence": 0.6,
+      "label": "qaoa_3qb_p1",
+      "restored_gates": 16,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.7013333333333334,
+      "label": "qaoa_3qb_p1",
+      "restored_gates": 9,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.6270833333333333,
+      "label": "qaoa_3qb_p1",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 18,
+      "circuit_type": "qaoa",
+      "confidence": 0.95,
+      "label": "qaoa_3qb_p2",
+      "restored_gates": 29,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_3qb_p2",
+      "restored_gates": 29,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.6,
+      "label": "qaoa_3qb_p2",
+      "restored_gates": 29,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.6724102564102564,
+      "label": "qaoa_3qb_p2",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.7367816091954023,
+      "label": "qaoa_3qb_p2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 28,
+      "circuit_type": "qaoa",
+      "confidence": 0.9500000000000001,
+      "label": "qaoa_3qb_p3",
+      "restored_gates": 42,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_3qb_p3",
+      "restored_gates": 42,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.6,
+      "label": "qaoa_3qb_p3",
+      "restored_gates": 42,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "qaoa",
+      "confidence": 0.5773333333333334,
+      "label": "qaoa_3qb_p3",
+      "restored_gates": 27,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qaoa",
+      "confidence": 0.7404761904761905,
+      "label": "qaoa_3qb_p3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "qaoa",
+      "confidence": 0.9499999999999998,
+      "label": "qaoa_4qb_p1",
+      "restored_gates": 23,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_4qb_p1",
+      "restored_gates": 23,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.5714285714285714,
+      "label": "qaoa_4qb_p1",
+      "restored_gates": 23,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 20,
+      "circuit_type": "qaoa",
+      "confidence": 0.641174019607843,
+      "label": "qaoa_4qb_p1",
+      "restored_gates": 13,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.6646376811594202,
+      "label": "qaoa_4qb_p1",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 48,
+      "circuit_type": "qaoa",
+      "confidence": 0.9500000000000001,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.5714285714285714,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "qaoa",
+      "confidence": 0.542686919504644,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 26,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.7333333333333334,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 43,
+      "circuit_type": "qaoa",
+      "confidence": 0.9500000000000001,
+      "label": "qaoa_4qb_p3",
+      "restored_gates": 61,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_4qb_p3",
+      "restored_gates": 61,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.5714285714285714,
+      "label": "qaoa_4qb_p3",
+      "restored_gates": 61,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "qaoa",
+      "confidence": 0.47779335699797165,
+      "label": "qaoa_4qb_p3",
+      "restored_gates": 39,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.7366120218579235,
+      "label": "qaoa_4qb_p3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 18,
+      "circuit_type": "qaoa",
+      "confidence": 0.95,
+      "label": "qaoa_5qb_p1",
+      "restored_gates": 30,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_5qb_p1",
+      "restored_gates": 30,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.5555555555555556,
+      "label": "qaoa_5qb_p1",
+      "restored_gates": 30,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.6093684210526316,
+      "label": "qaoa_5qb_p1",
+      "restored_gates": 17,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.7033333333333334,
+      "label": "qaoa_5qb_p1",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 38,
+      "circuit_type": "qaoa",
+      "confidence": 0.9500000000000001,
+      "label": "qaoa_5qb_p2",
+      "restored_gates": 55,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_5qb_p2",
+      "restored_gates": 55,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.5555555555555556,
+      "label": "qaoa_5qb_p2",
+      "restored_gates": 55,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "qaoa",
+      "confidence": 0.4478210526315789,
+      "label": "qaoa_5qb_p2",
+      "restored_gates": 34,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.7315151515151515,
+      "label": "qaoa_5qb_p2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 60,
+      "circuit_type": "qaoa",
+      "confidence": 0.9499999999999998,
+      "label": "qaoa_5qb_p3",
+      "restored_gates": 80,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_5qb_p3",
+      "restored_gates": 80,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qaoa",
+      "confidence": 0.5555555555555556,
+      "label": "qaoa_5qb_p3",
+      "restored_gates": 80,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "qaoa",
+      "confidence": 0.4472631578947368,
+      "label": "qaoa_5qb_p3",
+      "restored_gates": 51,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qaoa",
+      "confidence": 0.7345833333333334,
+      "label": "qaoa_5qb_p3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 23,
+      "circuit_type": "qaoa",
+      "confidence": 0.95,
+      "label": "qaoa_6qb_p1",
+      "restored_gates": 37,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_6qb_p1",
+      "restored_gates": 37,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qaoa",
+      "confidence": 0.5454545454545454,
+      "label": "qaoa_6qb_p1",
+      "restored_gates": 37,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qaoa",
+      "confidence": 0.5565542635658915,
+      "label": "qaoa_6qb_p1",
+      "restored_gates": 21,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.7225225225225225,
+      "label": "qaoa_6qb_p1",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 49,
+      "circuit_type": "qaoa",
+      "confidence": 0.95,
+      "label": "qaoa_6qb_p2",
+      "restored_gates": 68,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_6qb_p2",
+      "restored_gates": 68,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qaoa",
+      "confidence": 0.5454545454545454,
+      "label": "qaoa_6qb_p2",
+      "restored_gates": 68,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 11,
+      "circuit_type": "qaoa",
+      "confidence": 0.4274792448112028,
+      "label": "qaoa_6qb_p2",
+      "restored_gates": 42,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qaoa",
+      "confidence": 0.7303921568627452,
+      "label": "qaoa_6qb_p2",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 73,
+      "circuit_type": "qaoa",
+      "confidence": 0.9499999999999997,
+      "label": "qaoa_6qb_p3",
+      "restored_gates": 99,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qaoa",
+      "confidence": 0.0,
+      "label": "qaoa_6qb_p3",
+      "restored_gates": 99,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qaoa",
+      "confidence": 0.5454545454545454,
+      "label": "qaoa_6qb_p3",
+      "restored_gates": 99,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 16,
+      "circuit_type": "qaoa",
+      "confidence": 0.42709162130958267,
+      "label": "qaoa_6qb_p3",
+      "restored_gates": 63,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "qaoa",
+      "confidence": 0.7333333333333334,
+      "label": "qaoa_6qb_p3",
+      "restored_gates": 2,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n10",
+      "restored_gates": 10,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n10",
+      "restored_gates": 10,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n10",
+      "restored_gates": 10,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.8726666666666667,
+      "label": "qdrift_3qb_n10",
+      "restored_gates": 9,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n10",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 15,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n20",
+      "restored_gates": 20,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n20",
+      "restored_gates": 20,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n20",
+      "restored_gates": 20,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.9493333333333334,
+      "label": "qdrift_3qb_n20",
+      "restored_gates": 9,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n20",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 38,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n40",
+      "restored_gates": 40,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n40",
+      "restored_gates": 40,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n40",
+      "restored_gates": 40,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n40",
+      "restored_gates": 9,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n40",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 101,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n80",
+      "restored_gates": 80,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_3qb_n80",
+      "restored_gates": 80,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n80",
+      "restored_gates": 80,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n80",
+      "restored_gates": 9,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 14,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_3qb_n80",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n10",
+      "restored_gates": 10,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n10",
+      "restored_gates": 10,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n10",
+      "restored_gates": 10,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.831,
+      "label": "qdrift_4qb_n10",
+      "restored_gates": 10,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n10",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 61,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 20,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 20,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 20,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 0.896,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 12,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 38,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n40",
+      "restored_gates": 40,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n40",
+      "restored_gates": 40,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n40",
+      "restored_gates": 40,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n40",
+      "restored_gates": 12,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n40",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 86,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n80",
+      "restored_gates": 80,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_4qb_n80",
+      "restored_gates": 80,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n80",
+      "restored_gates": 80,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n80",
+      "restored_gates": 12,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 11,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_4qb_n80",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n10",
+      "restored_gates": 10,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n10",
+      "restored_gates": 10,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n10",
+      "restored_gates": 10,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 0.7493333333333334,
+      "label": "qdrift_6qb_n10",
+      "restored_gates": 10,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n10",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 27,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n20",
+      "restored_gates": 20,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n20",
+      "restored_gates": 20,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n20",
+      "restored_gates": 20,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.8726666666666667,
+      "label": "qdrift_6qb_n20",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n20",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 40,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n40",
+      "restored_gates": 40,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n40",
+      "restored_gates": 40,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n40",
+      "restored_gates": 40,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.9493333333333333,
+      "label": "qdrift_6qb_n40",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n40",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 81,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n80",
+      "restored_gates": 80,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift",
+      "confidence": 0.0,
+      "label": "qdrift_6qb_n80",
+      "restored_gates": 80,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n80",
+      "restored_gates": 80,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 5,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n80",
+      "restored_gates": 18,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 9,
+      "circuit_type": "qdrift",
+      "confidence": 1.0,
+      "label": "qdrift_6qb_n80",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 21,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_4qb_n20",
+      "restored_gates": 30,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_4qb_n20",
+      "restored_gates": 30,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift_zz",
+      "confidence": 1.0,
+      "label": "qdrift_zz_4qb_n20",
+      "restored_gates": 30,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.44728683385579937,
+      "label": "qdrift_zz_4qb_n20",
+      "restored_gates": 30,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.8999999999999999,
+      "label": "qdrift_zz_4qb_n20",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 65,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_4qb_n40",
+      "restored_gates": 60,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_4qb_n40",
+      "restored_gates": 60,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift_zz",
+      "confidence": 1.0,
+      "label": "qdrift_zz_4qb_n40",
+      "restored_gates": 60,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 17,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.4486895223420647,
+      "label": "qdrift_zz_4qb_n40",
+      "restored_gates": 60,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 8,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.8999999999999999,
+      "label": "qdrift_zz_4qb_n40",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 23,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_6qb_n20",
+      "restored_gates": 30,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 0,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_6qb_n20",
+      "restored_gates": 30,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 1,
+      "circuit_type": "qdrift_zz",
+      "confidence": 1.0,
+      "label": "qdrift_zz_6qb_n20",
+      "restored_gates": 30,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 7,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.42612373225152134,
+      "label": "qdrift_zz_6qb_n20",
+      "restored_gates": 30,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 3,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.8999999999999999,
+      "label": "qdrift_zz_6qb_n20",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    },
+    {
+      "apply_time_us": 56,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_6qb_n40",
+      "restored_gates": 60,
+      "strategy": "KAK",
+      "success": true
+    },
+    {
+      "apply_time_us": 4,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.0,
+      "label": "qdrift_zz_6qb_n40",
+      "restored_gates": 60,
+      "strategy": "Template",
+      "success": true
+    },
+    {
+      "apply_time_us": 2,
+      "circuit_type": "qdrift_zz",
+      "confidence": 1.0,
+      "label": "qdrift_zz_6qb_n40",
+      "restored_gates": 60,
+      "strategy": "Temporal",
+      "success": true
+    },
+    {
+      "apply_time_us": 13,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.4275264207377867,
+      "label": "qdrift_zz_6qb_n40",
+      "restored_gates": 60,
+      "strategy": "VQE",
+      "success": true
+    },
+    {
+      "apply_time_us": 6,
+      "circuit_type": "qdrift_zz",
+      "confidence": 0.8999999999999999,
+      "label": "qdrift_zz_6qb_n40",
+      "restored_gates": 3,
+      "strategy": "qDRIFT",
+      "success": true
+    }
+  ],
+  "per_circuit_type_summary": [
+    {
+      "avg_confidence": 0.9499999999999997,
+      "avg_restore_time_us": 213.86666666666667,
+      "avg_strategies_applied": 1.0,
+      "circuit_type": "hamiltonian_simulation",
+      "count": 15,
+      "early_stop_pct": 100.0
+    },
+    {
+      "avg_confidence": 0.6227511337341262,
+      "avg_restore_time_us": 83.58333333333333,
+      "avg_strategies_applied": 3.0,
+      "circuit_type": "vqe_efficientsu2",
+      "count": 12,
+      "early_stop_pct": 0.0
+    },
+    {
+      "avg_confidence": 0.4736947519732649,
+      "avg_restore_time_us": 61.916666666666664,
+      "avg_strategies_applied": 2.75,
+      "circuit_type": "vqe_realamplitudes",
+      "count": 12,
+      "early_stop_pct": 0.0
+    },
+    {
+      "avg_confidence": 0.4739302555289229,
+      "avg_restore_time_us": 141.75,
+      "avg_strategies_applied": 3.0,
+      "circuit_type": "vqe_uccsd",
+      "count": 4,
+      "early_stop_pct": 0.0
+    },
+    {
+      "avg_confidence": 0.9499999999999998,
+      "avg_restore_time_us": 79.33333333333333,
+      "avg_strategies_applied": 1.0,
+      "circuit_type": "qaoa",
+      "count": 12,
+      "early_stop_pct": 100.0
+    },
+    {
+      "avg_confidence": 0.7782296296296297,
+      "avg_restore_time_us": 55.916666666666664,
+      "avg_strategies_applied": 3.0,
+      "circuit_type": "qdrift",
+      "count": 12,
+      "early_stop_pct": 0.0
+    },
+    {
+      "avg_confidence": 0.6166417672791448,
+      "avg_restore_time_us": 75.25,
+      "avg_strategies_applied": 3.0,
+      "circuit_type": "qdrift_zz",
+      "count": 4,
+      "early_stop_pct": 0.0
+    }
+  ],
+  "per_strategy_summary": [
+    {
+      "avg_apply_time_us": 49.67605633802817,
+      "avg_confidence": 0.36126760563380267,
+      "confidence_by_circuit_type": [
+        {
+          "avg_confidence": 0.9499999999999997,
+          "circuit_type": "hamiltonian_simulation"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_efficientsu2"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_realamplitudes"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_uccsd"
+        },
+        {
+          "avg_confidence": 0.9499999999999998,
+          "circuit_type": "qaoa"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "qdrift"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "qdrift_zz"
+        }
+      ],
+      "strategy": "KAK",
+      "total_tests": 71
+    },
+    {
+      "avg_apply_time_us": 2.6338028169014085,
+      "avg_confidence": 0.0,
+      "confidence_by_circuit_type": [
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "hamiltonian_simulation"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_efficientsu2"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_realamplitudes"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "vqe_uccsd"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "qaoa"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "qdrift"
+        },
+        {
+          "avg_confidence": 0.0,
+          "circuit_type": "qdrift_zz"
+        }
+      ],
+      "strategy": "Template",
+      "total_tests": 71
+    },
+    {
+      "avg_apply_time_us": 3.183098591549296,
+      "avg_confidence": 0.6184182919296293,
+      "confidence_by_circuit_type": [
+        {
+          "avg_confidence": 0.6666666666666665,
+          "circuit_type": "hamiltonian_simulation"
+        },
+        {
+          "avg_confidence": 0.5,
+          "circuit_type": "vqe_efficientsu2"
+        },
+        {
+          "avg_confidence": 0.2734375,
+          "circuit_type": "vqe_realamplitudes"
+        },
+        {
+          "avg_confidence": 0.45228317742191215,
+          "circuit_type": "vqe_uccsd"
+        },
+        {
+          "avg_confidence": 0.5681096681096679,
+          "circuit_type": "qaoa"
+        },
+        {
+          "avg_confidence": 1.0,
+          "circuit_type": "qdrift"
+        },
+        {
+          "avg_confidence": 1.0,
+          "circuit_type": "qdrift_zz"
+        }
+      ],
+      "strategy": "Temporal",
+      "total_tests": 71
+    },
+    {
+      "avg_apply_time_us": 9.492957746478874,
+      "avg_confidence": 0.7335504211682902,
+      "confidence_by_circuit_type": [
+        {
+          "avg_confidence": 0.5449717788024054,
+          "circuit_type": "hamiltonian_simulation"
+        },
+        {
+          "avg_confidence": 0.8987619047619049,
+          "circuit_type": "vqe_efficientsu2"
+        },
+        {
+          "avg_confidence": 0.968,
+          "circuit_type": "vqe_realamplitudes"
+        },
+        {
+          "avg_confidence": 0.5270228851990326,
+          "circuit_type": "vqe_uccsd"
+        },
+        {
+          "avg_confidence": 0.5440257483710838,
+          "circuit_type": "qaoa"
+        },
+        {
+          "avg_confidence": 0.9266944444444446,
+          "circuit_type": "qdrift"
+        },
+        {
+          "avg_confidence": 0.437406627296793,
+          "circuit_type": "qdrift_zz"
+        }
+      ],
+      "strategy": "VQE",
+      "total_tests": 71
+    },
+    {
+      "avg_apply_time_us": 5.323943661971831,
+      "avg_confidence": 0.7512986170127519,
+      "confidence_by_circuit_type": [
+        {
+          "avg_confidence": 0.6833333333333335,
+          "circuit_type": "hamiltonian_simulation"
+        },
+        {
+          "avg_confidence": 0.8492438773928542,
+          "circuit_type": "vqe_efficientsu2"
+        },
+        {
+          "avg_confidence": 0.48262175591979467,
+          "circuit_type": "vqe_realamplitudes"
+        },
+        {
+          "avg_confidence": 0.7288025519743953,
+          "circuit_type": "vqe_uccsd"
+        },
+        {
+          "avg_confidence": 0.7162170000213353,
+          "circuit_type": "qaoa"
+        },
+        {
+          "avg_confidence": 1.0,
+          "circuit_type": "qdrift"
+        },
+        {
+          "avg_confidence": 0.8999999999999999,
+          "circuit_type": "qdrift_zz"
+        }
+      ],
+      "strategy": "qDRIFT",
+      "total_tests": 71
+    }
+  ],
+  "pipeline_detailed_results": [
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 24,
+      "input_num_qubits": 3,
+      "label": "ham_sim_3qb_1steps",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.6909498069498069,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 43,
+      "restored_gate_count": 24,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 48,
+      "input_num_qubits": 3,
+      "label": "ham_sim_3qb_2steps",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5955409399547331,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 86,
+      "restored_gate_count": 48,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 72,
+      "input_num_qubits": 3,
+      "label": "ham_sim_3qb_3steps",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5957290277290277,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 131,
+      "restored_gate_count": 72,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 36,
+      "input_num_qubits": 4,
+      "label": "ham_sim_4qb_1steps",
+      "overall_confidence": 0.9499999999999998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5552744360902255,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 59,
+      "restored_gate_count": 36,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 72,
+      "input_num_qubits": 4,
+      "label": "ham_sim_4qb_2steps",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5558059975520195,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 127,
+      "restored_gate_count": 72,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 108,
+      "input_num_qubits": 4,
+      "label": "ham_sim_4qb_3steps",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5559777327935223,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 208,
+      "restored_gate_count": 108,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 4,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 48,
+      "input_num_qubits": 5,
+      "label": "ham_sim_5qb_1steps",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.531158701763353,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 73,
+      "restored_gate_count": 48,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 4,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 96,
+      "input_num_qubits": 5,
+      "label": "ham_sim_5qb_2steps",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5316098295829019,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 171,
+      "restored_gate_count": 96,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 4,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 144,
+      "input_num_qubits": 5,
+      "label": "ham_sim_5qb_3steps",
+      "overall_confidence": 0.9499999999999998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5317567084078711,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 281,
+      "restored_gate_count": 144,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 60,
+      "input_num_qubits": 6,
+      "label": "ham_sim_6qb_1steps",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5149974489795919,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 98,
+      "restored_gate_count": 60,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 120,
+      "input_num_qubits": 6,
+      "label": "ham_sim_6qb_2steps",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5153837668870366,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 223,
+      "restored_gate_count": 120,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 180,
+      "input_num_qubits": 6,
+      "label": "ham_sim_6qb_3steps",
+      "overall_confidence": 0.9499999999999997,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999997,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.515510132557696,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 730,
+      "restored_gate_count": 180,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999997,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 84,
+      "input_num_qubits": 8,
+      "label": "ham_sim_8qb_1steps",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.49473028008857506,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 166,
+      "restored_gate_count": 84,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 168,
+      "input_num_qubits": 8,
+      "label": "ham_sim_8qb_2steps",
+      "overall_confidence": 0.9499999999999998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.49502712609970684,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 310,
+      "restored_gate_count": 168,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "hamiltonian_simulation",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.7,
+        "trotter_order": "First"
+      },
+      "input_gate_count": 252,
+      "input_num_qubits": 8,
+      "label": "ham_sim_8qb_3steps",
+      "overall_confidence": 0.9499999999999996,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999996,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4951247466000118,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6833333333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 502,
+      "restored_gate_count": 252,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999996,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 16,
+      "input_num_qubits": 3,
+      "label": "vqe_esu2_3qb_d2",
+      "overall_confidence": 0.6271777777777777,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 23,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 24,
+      "input_num_qubits": 3,
+      "label": "vqe_esu2_3qb_d3",
+      "overall_confidence": 0.6287777777777778,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 35,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 40,
+      "input_num_qubits": 3,
+      "label": "vqe_esu2_3qb_d5",
+      "overall_confidence": 0.6213873015873016,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 59,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8583333333333332,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 22,
+      "input_num_qubits": 4,
+      "label": "vqe_esu2_4qb_d2",
+      "overall_confidence": 0.6249050505050505,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 31,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 33,
+      "input_num_qubits": 4,
+      "label": "vqe_esu2_4qb_d3",
+      "overall_confidence": 0.6265050505050506,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 79,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 55,
+      "input_num_qubits": 4,
+      "label": "vqe_esu2_4qb_d5",
+      "overall_confidence": 0.6191145743145744,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 94,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8515151515151516,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 34,
+      "input_num_qubits": 6,
+      "label": "vqe_esu2_6qb_d2",
+      "overall_confidence": 0.6227660130718954,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 52,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 51,
+      "input_num_qubits": 6,
+      "label": "vqe_esu2_6qb_d3",
+      "overall_confidence": 0.6243660130718954,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 85,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 85,
+      "input_num_qubits": 6,
+      "label": "vqe_esu2_6qb_d5",
+      "overall_confidence": 0.6169755368814193,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 172,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8450980392156862,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 46,
+      "input_num_qubits": 8,
+      "label": "vqe_esu2_8qb_d2",
+      "overall_confidence": 0.6217429951690822,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 66,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 69,
+      "input_num_qubits": 8,
+      "label": "vqe_esu2_8qb_d3",
+      "overall_confidence": 0.6233429951690821,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 111,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.91,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_efficientsu2",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 2,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 115,
+      "input_num_qubits": 8,
+      "label": "vqe_esu2_8qb_d5",
+      "overall_confidence": 0.6159525189786059,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 196,
+      "restored_gate_count": 2,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8822857142857143,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8420289855072463,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 13,
+      "input_num_qubits": 3,
+      "label": "vqe_real_3qb_d2",
+      "overall_confidence": 0.5958974358974359,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4444444444444444,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.721025641025641,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 23,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4444444444444444,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.721025641025641,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 18,
+      "input_num_qubits": 3,
+      "label": "vqe_real_3qb_d3",
+      "overall_confidence": 0.5555555555555555,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3333333333333333,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 35,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3333333333333333,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6666666666666666,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 28,
+      "input_num_qubits": 3,
+      "label": "vqe_real_3qb_d5",
+      "overall_confidence": 0.516863492063492,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.2222222222222222,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6428571428571428,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 58,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.2222222222222222,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6428571428571428,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 38,
+      "input_num_qubits": 3,
+      "label": "vqe_real_3qb_d7",
+      "overall_confidence": 0.4722801169590644,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.16666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.593640350877193,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 80,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.16666666666666666,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.593640350877193,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 18,
+      "input_num_qubits": 4,
+      "label": "vqe_real_4qb_d2",
+      "overall_confidence": 0.5805555555555556,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4166666666666667,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6916666666666667,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 26,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4166666666666667,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6916666666666667,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 25,
+      "input_num_qubits": 4,
+      "label": "vqe_real_4qb_d3",
+      "overall_confidence": 0.5383055555555556,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3125,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6274166666666667,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 40,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3125,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6274166666666667,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 4,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 39,
+      "input_num_qubits": 4,
+      "label": "vqe_real_4qb_d5",
+      "overall_confidence": 0.2998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.20833333333333334,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 63,
+      "restored_gate_count": 39,
+      "status": "ok",
+      "strategies_applied": 2,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.20833333333333334,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 53,
+      "input_num_qubits": 4,
+      "label": "vqe_real_4qb_d7",
+      "overall_confidence": 0.4653329140461216,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.15625,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.5790487421383648,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 99,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.15625,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.5790487421383648,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 28,
+      "input_num_qubits": 6,
+      "label": "vqe_real_6qb_d2",
+      "overall_confidence": 0.5587301587301587,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3888888888888889,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6428571428571428,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 43,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.3888888888888889,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6428571428571428,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 1,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 39,
+      "input_num_qubits": 6,
+      "label": "vqe_real_6qb_d3",
+      "overall_confidence": 0.5337606837606838,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.2916666666666667,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6262820512820513,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 62,
+      "restored_gate_count": 1,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.2916666666666667,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6262820512820513,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 6,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 61,
+      "input_num_qubits": 6,
+      "label": "vqe_real_6qb_d5",
+      "overall_confidence": 0.29702222222222224,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.19444444444444445,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 89,
+      "restored_gate_count": 61,
+      "status": "ok",
+      "strategies_applied": 2,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.19444444444444445,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9680000000000001,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_realamplitudes",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 6,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 83,
+      "input_num_qubits": 6,
+      "label": "vqe_real_6qb_d7",
+      "overall_confidence": 0.2702333333333334,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.14583333333333334,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 125,
+      "restored_gate_count": 83,
+      "status": "ok",
+      "strategies_applied": 2,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.14583333333333334,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.904,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_uccsd",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 29,
+      "input_num_qubits": 4,
+      "label": "vqe_uccsd_4qb_2e",
+      "overall_confidence": 0.48547279737786836,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.47058823529411764,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5492248157248157,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.734685598377282,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 109,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.47058823529411764,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5492248157248157,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.734685598377282,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_uccsd",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 63,
+      "input_num_qubits": 6,
+      "label": "vqe_uccsd_6qb_2e",
+      "overall_confidence": 0.4741903308784094,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.45714285714285713,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5234518360321305,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7295238095238095,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 111,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.45714285714285713,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5234518360321305,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7295238095238095,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_uccsd",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 76,
+      "input_num_qubits": 6,
+      "label": "vqe_uccsd_6qb_3e",
+      "overall_confidence": 0.46687790580537514,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.42857142857142855,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5256981618077509,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7229323308270676,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 138,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.42857142857142855,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5256981618077509,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7229323308270676,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "vqe_uccsd",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 97,
+      "input_num_qubits": 8,
+      "label": "vqe_uccsd_8qb_2e",
+      "overall_confidence": 0.4691799880540386,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4528301886792453,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5097167272314331,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7280684691694221,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 209,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.4528301886792453,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5097167272314331,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7280684691694221,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 16,
+      "input_num_qubits": 3,
+      "label": "qaoa_3qb_p1",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.7013333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6270833333333333,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 18,
+      "restored_gate_count": 16,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 29,
+      "input_num_qubits": 3,
+      "label": "qaoa_3qb_p2",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.6724102564102564,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7367816091954023,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 41,
+      "restored_gate_count": 29,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 5,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 42,
+      "input_num_qubits": 3,
+      "label": "qaoa_3qb_p3",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.6,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5773333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7404761904761905,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 66,
+      "restored_gate_count": 42,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 23,
+      "input_num_qubits": 4,
+      "label": "qaoa_4qb_p1",
+      "overall_confidence": 0.9499999999999998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5714285714285714,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.641174019607843,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.6646376811594202,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 27,
+      "restored_gate_count": 23,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 42,
+      "input_num_qubits": 4,
+      "label": "qaoa_4qb_p2",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5714285714285714,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.542686919504644,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7333333333333334,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 87,
+      "restored_gate_count": 42,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 7,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 61,
+      "input_num_qubits": 4,
+      "label": "qaoa_4qb_p3",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5714285714285714,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.47779335699797165,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7366120218579235,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 104,
+      "restored_gate_count": 61,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 9,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 30,
+      "input_num_qubits": 5,
+      "label": "qaoa_5qb_p1",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5555555555555556,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.6093684210526316,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7033333333333334,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 39,
+      "restored_gate_count": 30,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 9,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 55,
+      "input_num_qubits": 5,
+      "label": "qaoa_5qb_p2",
+      "overall_confidence": 0.9500000000000001,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5555555555555556,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4478210526315789,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7315151515151515,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 90,
+      "restored_gate_count": 55,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9500000000000001,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 9,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 80,
+      "input_num_qubits": 5,
+      "label": "qaoa_5qb_p3",
+      "overall_confidence": 0.9499999999999998,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5555555555555556,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4472631578947368,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7345833333333334,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 132,
+      "restored_gate_count": 80,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999998,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 11,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 37,
+      "input_num_qubits": 6,
+      "label": "qaoa_6qb_p1",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5454545454545454,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.5565542635658915,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7225225225225225,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 49,
+      "restored_gate_count": 37,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 11,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 68,
+      "input_num_qubits": 6,
+      "label": "qaoa_6qb_p2",
+      "overall_confidence": 0.95,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5454545454545454,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4274792448112028,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7303921568627452,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 109,
+      "restored_gate_count": 68,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.95,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qaoa",
+      "early_stopped": true,
+      "extraction_result": {
+        "num_terms": 11,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 99,
+      "input_num_qubits": 6,
+      "label": "qaoa_6qb_p3",
+      "overall_confidence": 0.9499999999999997,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.9499999999999997,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 0.5454545454545454,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.42709162130958267,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.7333333333333334,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 190,
+      "restored_gate_count": 99,
+      "status": "ok",
+      "strategies_applied": 1,
+      "strategy_confidences": [
+        {
+          "confidence": 0.9499999999999997,
+          "strategy": "KAK Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 10,
+      "input_num_qubits": 3,
+      "label": "qdrift_3qb_n10",
+      "overall_confidence": 0.7593777777777778,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8726666666666667,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 13,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8726666666666667,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.9800000000000001,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 20,
+      "input_num_qubits": 3,
+      "label": "qdrift_3qb_n20",
+      "overall_confidence": 0.7798222222222222,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9493333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 24,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9493333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.9800000000000001,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 40,
+      "input_num_qubits": 3,
+      "label": "qdrift_3qb_n40",
+      "overall_confidence": 0.7933333333333333,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 49,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.9800000000000001,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 80,
+      "input_num_qubits": 3,
+      "label": "qdrift_3qb_n80",
+      "overall_confidence": 0.7933333333333333,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 99,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.9800000000000001,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 10,
+      "input_num_qubits": 4,
+      "label": "qdrift_4qb_n10",
+      "overall_confidence": 0.7549333333333333,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.831,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 15,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.831,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 20,
+      "input_num_qubits": 4,
+      "label": "qdrift_4qb_n20",
+      "overall_confidence": 0.7722666666666668,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.896,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 26,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.896,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 40,
+      "input_num_qubits": 4,
+      "label": "qdrift_4qb_n40",
+      "overall_confidence": 0.7999999999999999,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 51,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 80,
+      "input_num_qubits": 4,
+      "label": "qdrift_4qb_n80",
+      "overall_confidence": 0.7999999999999999,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 103,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 10,
+      "input_num_qubits": 6,
+      "label": "qdrift_6qb_n10",
+      "overall_confidence": 0.7331555555555557,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.7493333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 35,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.7493333333333334,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 20,
+      "input_num_qubits": 6,
+      "label": "qdrift_6qb_n20",
+      "overall_confidence": 0.7660444444444444,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8726666666666667,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 51,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.8726666666666667,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 40,
+      "input_num_qubits": 6,
+      "label": "qdrift_6qb_n40",
+      "overall_confidence": 0.7864888888888889,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9493333333333333,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 101,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.9493333333333333,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 80,
+      "input_num_qubits": 6,
+      "label": "qdrift_6qb_n80",
+      "overall_confidence": 0.7999999999999999,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 104,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift_zz",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 30,
+      "input_num_qubits": 4,
+      "label": "qdrift_zz_4qb_n20",
+      "overall_confidence": 0.6192764890282131,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.44728683385579937,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 50,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.44728683385579937,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift_zz",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 60,
+      "input_num_qubits": 4,
+      "label": "qdrift_zz_4qb_n40",
+      "overall_confidence": 0.6196505392912172,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4486895223420647,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 97,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4486895223420647,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift_zz",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 30,
+      "input_num_qubits": 6,
+      "label": "qdrift_zz_6qb_n20",
+      "overall_confidence": 0.6136329952670724,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.42612373225152134,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 50,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.42612373225152134,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    },
+    {
+      "circuit_type": "qdrift_zz",
+      "early_stopped": false,
+      "extraction_result": {
+        "num_terms": 3,
+        "order_confidence": 0.0,
+        "trotter_order": null
+      },
+      "input_gate_count": 60,
+      "input_num_qubits": 6,
+      "label": "qdrift_zz_6qb_n40",
+      "overall_confidence": 0.6140070455300765,
+      "pre_restoration_scores": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4275264207377867,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ],
+      "restore_time_us": 104,
+      "restored_gate_count": 3,
+      "status": "ok",
+      "strategies_applied": 3,
+      "strategy_confidences": [
+        {
+          "confidence": 0.0,
+          "strategy": "KAK Restoration"
+        },
+        {
+          "confidence": 0.0,
+          "strategy": "Template Matching"
+        },
+        {
+          "confidence": 1.0,
+          "strategy": "Temporal Analysis"
+        },
+        {
+          "confidence": 0.4275264207377867,
+          "strategy": "VQE Restoration"
+        },
+        {
+          "confidence": 0.8999999999999999,
+          "strategy": "qDRIFT Restoration"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "avg_overall_confidence": 0.7395548489475571,
+    "successful_pipeline_tests": 71,
+    "total_circuits": 71,
+    "total_time_ms": 28
+  },
+  "threshold_scan_results": [
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategies_applied": 1,
+      "threshold": 0.3,
+      "time_us": 179
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategies_applied": 1,
+      "threshold": 0.5,
+      "time_us": 132
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategies_applied": 1,
+      "threshold": 0.7,
+      "time_us": 126
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategies_applied": 1,
+      "threshold": 0.85,
+      "time_us": 136
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 72,
+      "strategies_applied": 1,
+      "threshold": 0.95,
+      "time_us": 126
+    },
+    {
+      "confidence": 0.582659377124983,
+      "early_stopped": false,
+      "label": "ham_sim_4qb_2steps",
+      "restored_gates": 2,
+      "strategies_applied": 4,
+      "threshold": 1.0,
+      "time_us": 196
+    },
+    {
+      "confidence": 0.514,
+      "early_stopped": true,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategies_applied": 2,
+      "threshold": 0.3,
+      "time_us": 46
+    },
+    {
+      "confidence": 0.514,
+      "early_stopped": true,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 33,
+      "strategies_applied": 2,
+      "threshold": 0.5,
+      "time_us": 35
+    },
+    {
+      "confidence": 0.6265050505050506,
+      "early_stopped": false,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 2,
+      "strategies_applied": 3,
+      "threshold": 0.7,
+      "time_us": 60
+    },
+    {
+      "confidence": 0.6265050505050506,
+      "early_stopped": false,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 2,
+      "strategies_applied": 3,
+      "threshold": 0.85,
+      "time_us": 45
+    },
+    {
+      "confidence": 0.6265050505050506,
+      "early_stopped": false,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 2,
+      "strategies_applied": 3,
+      "threshold": 0.95,
+      "time_us": 44
+    },
+    {
+      "confidence": 0.6265050505050506,
+      "early_stopped": false,
+      "label": "vqe_esu2_4qb_d3",
+      "restored_gates": 2,
+      "strategies_applied": 3,
+      "threshold": 1.0,
+      "time_us": 44
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategies_applied": 1,
+      "threshold": 0.3,
+      "time_us": 69
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategies_applied": 1,
+      "threshold": 0.5,
+      "time_us": 69
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategies_applied": 1,
+      "threshold": 0.7,
+      "time_us": 62
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategies_applied": 1,
+      "threshold": 0.85,
+      "time_us": 62
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "early_stopped": true,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 42,
+      "strategies_applied": 1,
+      "threshold": 0.95,
+      "time_us": 63
+    },
+    {
+      "confidence": 0.5872928244442176,
+      "early_stopped": false,
+      "label": "qaoa_4qb_p2",
+      "restored_gates": 2,
+      "strategies_applied": 4,
+      "threshold": 1.0,
+      "time_us": 112
+    },
+    {
+      "confidence": 0.5,
+      "early_stopped": true,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 20,
+      "strategies_applied": 1,
+      "threshold": 0.3,
+      "time_us": 18
+    },
+    {
+      "confidence": 0.5,
+      "early_stopped": true,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 20,
+      "strategies_applied": 1,
+      "threshold": 0.5,
+      "time_us": 16
+    },
+    {
+      "confidence": 0.7722666666666668,
+      "early_stopped": true,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 3,
+      "strategies_applied": 3,
+      "threshold": 0.7,
+      "time_us": 26
+    },
+    {
+      "confidence": 0.7722666666666668,
+      "early_stopped": false,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 3,
+      "strategies_applied": 3,
+      "threshold": 0.85,
+      "time_us": 24
+    },
+    {
+      "confidence": 0.7722666666666668,
+      "early_stopped": false,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 3,
+      "strategies_applied": 3,
+      "threshold": 0.95,
+      "time_us": 23
+    },
+    {
+      "confidence": 0.7722666666666668,
+      "early_stopped": false,
+      "label": "qdrift_4qb_n20",
+      "restored_gates": 3,
+      "strategies_applied": 3,
+      "threshold": 1.0,
+      "time_us": 24
+    }
+  ],
+  "timestamp": "2026-04-29T06:29:36.250306007+00:00"
+}

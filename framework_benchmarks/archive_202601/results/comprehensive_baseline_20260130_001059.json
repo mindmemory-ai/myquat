@@ -1,0 +1,36 @@
+[
+  {
+    "problem": "H2_molecule",
+    "num_qubits": 2,
+    "num_terms": 5,
+    "exact_energy": -1.137270422018,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.383,
+        "gate_count": 5,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 213.17028999328613,
+        "gate_count": 12,
+        "circuit_depth": 9,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.2598762512207031,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.6179084777832031,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999999939367963,
+      "qiskit_distance": 0.00011011996852338426,
+      "myquat_verified": 

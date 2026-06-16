@@ -1,0 +1,141 @@
+[package]
+name = "myquat"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.79"
+license = "Apache-2.0"
+description = "Enterprise-grade quantum computing library with NISQ algorithms, cloud backends, GPU acceleration, and Qiskit interoperability"
+authors = ["gA4ss <wenbin.yan@colorado.edu>"]
+repository = "https://github.com/yourusername/myquat"
+homepage = "https://github.com/yourusername/myquat"
+documentation = "https://docs.rs/myquat"
+readme = "README.md"
+keywords = ["quantum", "quantum-computing", "quantum-algorithms", "simulation", "NISQ"]
+categories = ["science", "simulation", "algorithms"]
+exclude = [
+    "docs/planning/*",
+    "examples/screenshots/*",
+    ".gitignore.cloud",
+    "examples/diagnose_magic_basis.rs",  # requires system libopenblas
+]
+
+[dependencies]
+num-complex = "0.4"
+num-traits = "0.2"
+nalgebra = "0.33"
+ndarray = { version = "0.15", features = ["rayon"] }
+ndarray-linalg = { version = "0.16", default-features = false, features = ["openblas-system"] }
+# default-features=false prevents the "openblas" default feature which
+# would trigger openblas-build→ureq TLS issues. Only "openblas-system"
+# (system-wide libopenblas) is active. The explicit openblas-src dep
+# ensures the `system` feature propagates to transitive consumers.
+openblas-src = { version = "0.10", features = ["system"] }
+thiserror = "2.0"
+rand = "0.9"
+rayon = "1.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+toml = "0.8"
+dirs = "5.0"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+symbolica = "0.12"
+petgraph = "0.6"
+
+# GPU acceleration (optional)
+cudarc = { version = "0.11", features = ["cuda-12050"], optional = true }
+
+[dev-dependencies]
+approx = "0.5"
+criterion = "0.5"
+tempfile = "3.0"
+
+[[bench]]
+name = "gate_benchmarks"
+harness = false
+
+[lib]
+name = "myquat"
+path = "src/lib.rs"
+
+[[bin]]
+name = "myquat-cli"
+path = "src/bin/main.rs"
+
+[features]
+default = []
+cuda = ["cudarc"]
+
+# Teaching demos examples
+[[example]]
+name = "demo_01_bell_state"
+path = "examples/teaching_demos/01_bell_state.rs"
+
+[[example]]
+name = "demo_02_beginner_tutorial"
+path = "examples/teaching_demos/02_beginner_tutorial.rs"
+
+[[example]]
+name = "demo_03_comprehensive_gates"
+path = "examples/teaching_demos/03_comprehensive_gates.rs"
+
+[[example]]
+name = "demo_04_visualization"
+path = "examples/teaching_demos/04_visualization.rs"
+
+[[example]]
+name = "demo_05_hamiltonian_forward"
+path = "examples/teaching_demos/05_hamiltonian_forward.rs"
+
+[[example]]
+name = "demo_06_hamiltonian_backward"
+path = "examples/teaching_demos/06_hamiltonian_backward.rs"
+
+[[example]]
+name = "demo_07_grover_algorithm"
+path = "examples/teaching_demos/07_grover_algorithm.rs"
+
+[[example]]
+name = "demo_08_vqe_chemistry"
+path = "examples/teaching_demos/08_vqe_chemistry.rs"
+
+[[example]]
+name = "demo_09_interactive_tutorial"
+path = "examples/teaching_demos/09_interactive_tutorial.rs"
+
+[[example]]
+name = "demo_10_adaptive_optimization"
+path = "examples/teaching_demos/10_adaptive_optimization.rs"
+
+[[example]]
+name = "gatefusion_bench"
+path = "examples/gatefusion_bench.rs"
+
+# Reverse Hamiltonian Extraction Experiments
+[[bin]]
+name = "exp01_trotter_detection"
+path = "experiments/reverse_hamiltonian_extraction/exp01_trotter_detection.rs"
+
+[[bin]]
+name = "exp02_hamiltonian_extraction"
+path = "experiments/reverse_hamiltonian_extraction/exp02_hamiltonian_extraction.rs"
+
+[[bin]]
+name = "exp03_deoptimization_pipeline"
+path = "experiments/reverse_hamiltonian_extraction/exp03_deoptimization_pipeline.rs"
+
+[[bin]]
+name = "exp04_vqe_recognition"
+path = "experiments/reverse_hamiltonian_extraction/exp04_vqe_recognition.rs"
+
+[[bin]]
+name = "exp05_qdrift_detection"
+path = "experiments/reverse_hamiltonian_extraction/exp05_qdrift_detection.rs"
+
+[[bin]]
+name = "exp06_scalability"
+path = "experiments/reverse_hamiltonian_extraction/exp06_scalability.rs"
+
+[[bin]]
+name = "exp07_noise_robustness"
+path = "experiments/reverse_hamiltonian_extraction/exp07_noise_robustness.rs"

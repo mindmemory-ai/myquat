@@ -1,0 +1,130 @@
+# MyQuat Cloud Backend Configuration
+# Author: gA4ss
+#
+# This is an example configuration file. Copy to cloud_config.toml and fill in your credentials.
+# DO NOT commit cloud_config.toml to version control!
+
+# Global settings for all cloud backends
+[global]
+# Default timeout for API requests (seconds)
+timeout_secs = 300
+# Maximum number of retries for failed requests
+max_retries = 3
+# Retry delay in seconds
+retry_delay_secs = 5
+# Enable request caching
+enable_cache = true
+# Cache directory
+cache_dir = ".myquat_cache"
+
+# IBM Quantum Configuration
+[ibm_quantum]
+# Enable/disable IBM Quantum backend
+enabled = true
+# API token from https://quantum.ibm.com/
+api_token = "your_ibm_quantum_api_token_here"
+# API URL (default: IBM Quantum production)
+api_url = "https://auth.quantum-computing.ibm.com/api"
+# Hub/Group/Project (optional, for premium access)
+hub = "ibm-q"
+group = "open"
+project = "main"
+# Default backend device
+default_backend = "ibmq_qasm_simulator"
+# Prefer simulators over real devices
+prefer_simulator = true
+# Maximum qubits for automatic backend selection
+max_qubits = 127
+
+# AWS Braket Configuration
+[aws_braket]
+# Enable/disable AWS Braket backend
+enabled = false
+# AWS Access Key ID
+access_key_id = "your_aws_access_key_id_here"
+# AWS Secret Access Key
+secret_access_key = "your_aws_secret_access_key_here"
+# AWS Session Token (optional, for temporary credentials)
+# session_token = "your_aws_session_token_here"
+# AWS Region
+region = "us-east-1"
+# S3 bucket for results storage
+s3_bucket = "amazon-braket-results"
+# S3 prefix for results
+s3_prefix = "myquat-results"
+# Default backend device
+default_backend = "arn:aws:braket:::device/quantum-simulator/amazon/sv1"
+# Maximum qubits
+max_qubits = 34
+
+# Azure Quantum Configuration
+[azure_quantum]
+# Enable/disable Azure Quantum backend
+enabled = false
+# Azure Subscription ID
+subscription_id = "your_azure_subscription_id_here"
+# Azure Resource Group
+resource_group = "your_resource_group"
+# Azure Quantum Workspace name
+workspace_name = "your_workspace_name"
+# Azure Location
+location = "eastus"
+# Azure Storage Account (for results)
+storage_account = "your_storage_account"
+# Storage Container
+storage_container = "quantum-results"
+# Default backend provider and target
+default_provider = "ionq"
+default_target = "ionq.simulator"
+# Maximum qubits
+max_qubits = 29
+
+# Google Quantum AI Configuration  
+[google_quantum]
+# Enable/disable Google Quantum backend
+enabled = false
+# Google Cloud Project ID
+project_id = "your_gcp_project_id"
+# Service Account JSON key file path
+service_account_key = "path/to/service-account-key.json"
+# Or use service account key content directly (base64 encoded)
+# service_account_key_base64 = "base64_encoded_key_here"
+# Processor ID
+processor_id = "rainbow"
+# Default engine
+default_engine = "cirq-engine"
+# Maximum qubits
+max_qubits = 23
+
+# Backend Selection Preferences
+[preferences]
+# Preferred backend order (will try in this order)
+backend_priority = ["ibm_quantum", "aws_braket", "azure_quantum", "google_quantum"]
+# Automatically select based on circuit properties
+auto_select = true
+# Prefer simulators for testing
+prefer_simulators = true
+# Maximum cost per job (USD, for cost-aware selection)
+max_cost_per_job = 10.0
+
+# Job Management
+[job_management]
+# Enable job result caching
+enable_result_cache = true
+# Cache TTL in seconds (default: 7 days)
+cache_ttl_secs = 604800
+# Automatically poll for job completion
+auto_poll = true
+# Polling interval in seconds
+poll_interval_secs = 10
+# Maximum wait time for job completion (seconds)
+max_wait_time_secs = 3600
+
+# Logging and Debugging
+[logging]
+# Log level: trace, debug, info, warn, error
+level = "info"
+# Log API requests/responses
+log_api_calls = false
+# Log file path (optional)
+log_file = "myquat_cloud.log"

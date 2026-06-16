@@ -1,0 +1,5 @@
+Framework,Language,CompilationTime_ms,GateCount,CircuitDepth,NumQubits,NumTerms,TrotterSteps,TrotterOrder
+MyQuat,Rust,7.0902,2904,1901,4,15,100,2
+Qiskit,Python,509.6337,9300,6100,4,15,100,2
+Cirq,Python,5833.4310,6608,4005,4,15,100,2
+PennyLane,Python,2426.0557,6800,6800,4,15,100,2

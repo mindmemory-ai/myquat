@@ -1,0 +1,6 @@
+problem,num_qubits,num_terms,trotter_steps,trotter_order,evolution_time,framework,language,compilation_time_ms,gate_count,circuit_depth,success,error,accuracy_frobenius_error
+H2_4q,4,15,10,1,1.0,MyQuat,Rust,1.987,500,233,True,,0.0883342794241659
+H2_4q,4,15,10,2,1.0,MyQuat,Rust,0.852,1000,520,True,,0.08826401587229413
+H2_4q,4,15,50,1,1.0,MyQuat,Rust,3.65,2500,1153,True,,0.08824433836680522
+H2_4q,4,15,50,2,1.0,MyQuat,Rust,5.062,5000,2600,True,,0.08824152716183775
+H2_4q,4,15,100,2,1.0,MyQuat,Rust,5.516,10000,5200,True,,0.08824082435540176

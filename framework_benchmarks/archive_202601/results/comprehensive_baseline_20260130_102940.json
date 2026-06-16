@@ -1,0 +1,578 @@
+[
+  {
+    "problem": "H2_molecule",
+    "num_qubits": 2,
+    "num_terms": 5,
+    "exact_energy": -1.137270422018,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.381,
+        "gate_count": 5,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 173.7954616546631,
+        "gate_count": 12,
+        "circuit_depth": 9,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.23889541625976562,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.7268657684326172,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999999757474062,
+      "qiskit_distance": 0.00015573315297386835,
+      "myquat_fidelity": 0.9999999757474062,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Ising_2q",
+    "num_qubits": 2,
+    "num_terms": 3,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.246,
+        "gate_count": 7,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.4487972259521484,
+        "gate_count": 5,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.0820159912109375,
+        "gate_count": 2,
+        "circuit_depth": 2,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 0.9591579437255859,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9999503321555357,
+      "qiskit_distance": 0.007055370251573293,
+      "myquat_fidelity": 0.9999503321555357,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Ising_3q",
+    "num_qubits": 3,
+    "num_terms": 5,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.354,
+        "gate_count": 11,
+        "circuit_depth": 4,
+        "num_qubits": 3
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.238750457763672,
+        "gate_count": 9,
+        "circuit_depth": 7,
+        "num_qubits": 3
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.10418891906738281,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 3
+      },
+      "PennyLane": {
+        "compilation_time_ms": 0.9355545043945312,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 3
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9998517663964486,
+      "qiskit_distance": 0.012193155285895544,
+      "myquat_fidelity": 0.9998517663964486,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Ising_4q",
+    "num_qubits": 4,
+    "num_terms": 7,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.418,
+        "gate_count": 15,
+        "circuit_depth": 4,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.3729801177978516,
+        "gate_count": 13,
+        "circuit_depth": 10,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.11396408081054688,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.0578632354736328,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9997532053460418,
+      "qiskit_distance": 0.015741103296797912,
+      "myquat_fidelity": 0.9997532053460418,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Ising_5q",
+    "num_qubits": 5,
+    "num_terms": 9,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.258,
+        "gate_count": 19,
+        "circuit_depth": 4,
+        "num_qubits": 5
+      },
+      "Qiskit": {
+        "compilation_time_ms": 3.122568130493164,
+        "gate_count": 17,
+        "circuit_depth": 13,
+        "num_qubits": 5
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.13685226440429688,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 5
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.6720294952392578,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 5
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Ising_6q",
+    "num_qubits": 6,
+    "num_terms": 11,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.382,
+        "gate_count": 23,
+        "circuit_depth": 4,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.355813980102539,
+        "gate_count": 21,
+        "circuit_depth": 16,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.14829635620117188,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.4693737030029297,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_3q",
+    "num_qubits": 3,
+    "num_terms": 6,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.301,
+        "gate_count": 11,
+        "circuit_depth": 4,
+        "num_qubits": 3
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.858877182006836,
+        "gate_count": 12,
+        "circuit_depth": 10,
+        "num_qubits": 3
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.102996826171875,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 3
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.056671142578125,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 3
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9997043021441641,
+      "qiskit_distance": 0.017224530222989535,
+      "myquat_fidelity": 0.9997043021441641,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "TFIM_4q",
+    "num_qubits": 4,
+    "num_terms": 8,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.242,
+        "gate_count": 15,
+        "circuit_depth": 4,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 1.9121170043945312,
+        "gate_count": 16,
+        "circuit_depth": 13,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.12993812561035156,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.1057853698730469,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9996057556680411,
+      "qiskit_distance": 0.019899702891593516,
+      "myquat_fidelity": 0.9996057556680411,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "TFIM_5q",
+    "num_qubits": 5,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.352,
+        "gate_count": 19,
+        "circuit_depth": 4,
+        "num_qubits": 5
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.2034645080566406,
+        "gate_count": 20,
+        "circuit_depth": 16,
+        "num_qubits": 5
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.18405914306640625,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 5
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.459360122680664,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 5
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_6q",
+    "num_qubits": 6,
+    "num_terms": 12,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.275,
+        "gate_count": 23,
+        "circuit_depth": 4,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.2950172424316406,
+        "gate_count": 24,
+        "circuit_depth": 19,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.14853477478027344,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.5153884887695312,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "TFIM_7q",
+    "num_qubits": 7,
+    "num_terms": 14,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.24,
+        "gate_count": 27,
+        "circuit_depth": 4,
+        "num_qubits": 7
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.1762847900390625,
+        "gate_count": 28,
+        "circuit_depth": 22,
+        "num_qubits": 7
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.16760826110839844,
+        "gate_count": 3,
+        "circuit_depth": 3,
+        "num_qubits": 7
+      },
+      "PennyLane": {
+        "compilation_time_ms": 1.6624927520751953,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 7
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_2q",
+    "num_qubits": 2,
+    "num_terms": 4,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.385,
+        "gate_count": 15,
+        "circuit_depth": 8,
+        "num_qubits": 2
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.186298370361328,
+        "gate_count": 24,
+        "circuit_depth": 20,
+        "num_qubits": 2
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.10538101196289062,
+        "gate_count": 4,
+        "circuit_depth": 4,
+        "num_qubits": 2
+      },
+      "PennyLane": {
+        "compilation_time_ms": 0.8633136749267578,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 2
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9998787089707754,
+      "qiskit_distance": 0.012097771432371916,
+      "myquat_fidelity": 0.9998787089707754,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Random_4q",
+    "num_qubits": 4,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.293,
+        "gate_count": 32,
+        "circuit_depth": 13,
+        "num_qubits": 4
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.2394657135009766,
+        "gate_count": 88,
+        "circuit_depth": 64,
+        "num_qubits": 4
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.2295970916748047,
+        "gate_count": 8,
+        "circuit_depth": 8,
+        "num_qubits": 4
+      },
+      "PennyLane": {
+        "compilation_time_ms": 3.7276744842529297,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 4
+      }
+    },
+    "accuracy": {
+      "qiskit_fidelity": 0.9997373185680256,
+      "qiskit_distance": 0.016437546474057457,
+      "myquat_fidelity": 0.9997373185680256,
+      "myquat_verified": true,
+      "verification_method": "Qiskit numerical + MyQuat equivalence"
+    }
+  },
+  {
+    "problem": "Random_6q",
+    "num_qubits": 6,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.42,
+        "gate_count": 55,
+        "circuit_depth": 18,
+        "num_qubits": 6
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.3179054260253906,
+        "gate_count": 156,
+        "circuit_depth": 108,
+        "num_qubits": 6
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.3745555877685547,
+        "gate_count": 10,
+        "circuit_depth": 10,
+        "num_qubits": 6
+      },
+      "PennyLane": {
+        "compilation_time_ms": 4.63104248046875,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 6
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_8q",
+    "num_qubits": 8,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.557,
+        "gate_count": 77,
+        "circuit_depth": 40,
+        "num_qubits": 8
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.6154518127441406,
+        "gate_count": 194,
+        "circuit_depth": 131,
+        "num_qubits": 8
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.4112720489501953,
+        "gate_count": 9,
+        "circuit_depth": 9,
+        "num_qubits": 8
+      },
+      "PennyLane": {
+        "compilation_time_ms": 123.23713302612305,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 8
+      }
+    },
+    "accuracy": null
+  },
+  {
+    "problem": "Random_10q",
+    "num_qubits": 10,
+    "num_terms": 10,
+    "exact_energy": null,
+    "frameworks": {
+      "MyQuat": {
+        "compilation_time_ms": 0.906,
+        "gate_count": 127,
+        "circuit_depth": 72,
+        "num_qubits": 10
+      },
+      "Qiskit": {
+        "compilation_time_ms": 2.9382705688476562,
+        "gate_count": 256,
+        "circuit_depth": 171,
+        "num_qubits": 10
+      },
+      "Cirq": {
+        "compilation_time_ms": 0.5164146423339844,
+        "gate_count": 10,
+        "circuit_depth": 10,
+        "num_qubits": 10
+      },
+      "PennyLane": {
+        "compilation_time_ms": 199.70202445983887,
+        "gate_count": 0,
+        "circuit_depth": 0,
+        "num_qubits": 10
+      }
+    },
+    "accuracy": null
+  }
+]

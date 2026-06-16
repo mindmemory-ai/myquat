@@ -1,0 +1,8 @@
+problem,num_qubits,num_terms,trotter_steps,trotter_order,evolution_time,framework,language,compilation_time_ms,gate_count,circuit_depth,success,error,accuracy_frobenius_error
+H2_4q,4,15,10,1,1.0,MyQuat,Rust,56.031,416,224,True,,1.3305527561207882
+H2_4q,4,15,10,1,1.0,Qiskit,Python,247.68362900067586,500,233,True,,
+H2_4q,4,15,10,1,1.0,Qiskit_Opt,Python,11.014677002094686,344,164,True,,
+H2_4q,4,15,10,1,1.0,Cirq,Python,214.85855500213802,347,185,True,,
+H2_4q,4,15,10,1,1.0,TKET,Python,92.92520400049398,329,200,True,,
+H2_4q,4,15,10,1,1.0,PennyLane,Python,168.20213999744738,150,71,True,,
+H2_4q,4,15,10,1,1.0,Paulihedral,Python,3.0815689970040694,580,253,True,,
