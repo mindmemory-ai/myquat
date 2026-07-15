@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Documentation](https://docs.rs/myquat/badge.svg)](https://docs.rs/myquat)
 
-**Author:** gA4ss &nbsp;|&nbsp; **Language:** Rust &nbsp;|&nbsp; **Version:** 0.1.0
+**Author:** gA4ss &nbsp;|&nbsp; **Language:** Rust &nbsp;|&nbsp; **Version:** 0.2.0
 
 A high-performance quantum computing simulation and development library. MyQuat
 provides a complete stack from basic gates to advanced algorithms, with
@@ -18,10 +18,10 @@ interoperability.
 
 ```toml
 [dependencies]
-myquat = "0.1.0"
+myquat = "0.2.0"
 
 # Optional: GPU acceleration
-myquat = { version = "0.1.0", features = ["cuda"] }
+myquat = { version = "0.2.0", features = ["cuda"] }
 ```
 
 ```rust
@@ -147,7 +147,6 @@ cargo run --example benchmark_hamiltonian -- 4 10 1.0 1 IIII:-0.8105 IIIZ:0.1721
 ## Documentation
 
 - **[API Documentation](https://docs.rs/myquat)** — Full crate docs on docs.rs
-- **[CLAUDE.md](CLAUDE.md)** — Architecture reference, module map, benchmark commands
 - **[examples/](examples/)** — 45+ working examples
 - **[docs/tutorials/](docs/tutorials/)** — Tutorial guides
 - **[docs/theory/](docs/theory/)** — Theoretical background
@@ -161,7 +160,7 @@ cargo run --example benchmark_hamiltonian -- 4 10 1.0 1 IIII:-0.8105 IIIZ:0.1721
 # Build
 cargo build
 
-# Test (1,073+ passing)
+# Test (1,141+ passing)
 cargo test --lib
 
 # Lint & format
@@ -180,7 +179,7 @@ cargo bench
 ## Project Stats
 
 - **Code:** ~40,000 lines of Rust across 127 source files
-- **Tests:** 1,073+ passing, 0 failing
+- **Tests:** 1,141+ passing, 0 failing
 - **Modules:** 45+ public modules, 25 stable (semver-guaranteed)
 - **Examples:** 45+ working examples
 - **Minimal Rust version:** 1.79
@@ -210,7 +209,7 @@ Apache 2.0 — see [LICENSE](LICENSE) for details.
   author = {gA4ss},
   title = {MyQuat: Quantum Computing Library in Rust},
   year = {2026},
-  version = {0.1.0},
+  version = {0.2.0},
   url = {https://github.com/mindmemory-ai/myquat}
 }
 ```
