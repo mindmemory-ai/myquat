@@ -5,6 +5,7 @@
 
 use crate::error::{MyQuatError, Result};
 use crate::gates::StandardGate;
+use crate::linalg::{LinalgBackend, NdArrayBackend};
 use crate::parameter::Parameter;
 use ndarray::Array2;
 use num_complex::Complex64;
@@ -399,24 +400,13 @@ impl CustomGateMatrix {
         matrix
     }
 
-    /// Compute Kronecker product of two matrices
+    /// Compute Kronecker product of two matrices.
+    /// Delegates to `NdArrayBackend::kronecker()`.
     pub fn kron(a: &Array2<Complex64>, b: &Array2<Complex64>) -> Array2<Complex64> {
-        let (m1, n1) = (a.nrows(), a.ncols());
-        let (m2, n2) = (b.nrows(), b.ncols());
-        let mut result = Array2::zeros((m1 * m2, n1 * n2));
-
-        for i in 0..m1 {
-            for j in 0..n1 {
-                let scalar = a[[i, j]];
-                for k in 0..m2 {
-                    for l in 0..n2 {
-                        result[[i * m2 + k, j * n2 + l]] = scalar * b[[k, l]];
-                    }
-                }
-            }
-        }
-
-        result
+        let backend = NdArrayBackend::new();
+        backend
+            .kronecker(a, b)
+            .expect("Kronecker product should not fail for valid matrices")
     }
 }
 

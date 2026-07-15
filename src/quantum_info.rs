@@ -4,6 +4,7 @@
 //! including state manipulation, entanglement measures, and quantum channels.
 
 use crate::error::{MyQuatError, Result};
+use crate::linalg::{LinalgBackend, LinalgResult, LinalgScalar, NdArrayBackend};
 use ndarray::{Array1, Array2};
 use num_complex::Complex64;
 
@@ -73,6 +74,19 @@ impl QuantumState {
             amplitudes,
             num_qubits,
         })
+    }
+
+    /// Create a quantum state from a backend vector
+    pub fn new_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        amplitudes: &B::Vector,
+        backend: &B,
+    ) -> LinalgResult<Self> {
+        let len = backend.len_vector(amplitudes);
+        let mut nda = Array1::zeros(len);
+        for i in 0..len {
+            nda[i] = backend.get_vector(amplitudes, i)?;
+        }
+        Self::new(nda).map_err(|e| crate::linalg::LinalgError::BackendError(e.to_string()))
     }
 
     /// Create the |0⟩ state for n qubits

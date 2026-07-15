@@ -326,6 +326,16 @@ pub use symbolic::{
     SymbolicConfig, SymbolicError, SymbolicExpression, SymbolicMatrix, SymbolicResult,
     SymbolicVariable, SymbolicaBackend,
 };
+
+// Linalg backend module
+pub mod linalg;
+pub use linalg::{
+    create_backend as create_linalg_backend,
+    create_default_backend as create_default_linalg_backend,
+    default_backend as default_linalg_backend, LinalgBackend, LinalgBackendImpl, LinalgBackendType,
+    LinalgConfig, LinalgError, LinalgResult, LinalgScalar, MyMatBackend, NdArrayBackend,
+    SchurResult, SvdResult,
+};
 pub use visualization::{CircuitVisualizer, ColorScheme, GateStyle, VisualizationStyle, WireStyle};
 // Note: hamiltonian::PauliOperator is not re-exported to avoid conflict with error_mitigation::PauliOperator
 // Use hamiltonian::PauliOperator explicitly if needed
@@ -397,7 +407,7 @@ mod tests {
     #[test]
     fn test_version_returns_cargo_pkg_version() {
         let v = version();
-        assert_eq!(v, "0.1.0");
+        assert_eq!(v, "0.2.0");
         // Verify it's a static string (can be called multiple times)
         assert_eq!(version(), version());
     }

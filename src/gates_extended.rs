@@ -6,6 +6,7 @@
 use crate::error::{MyQuatError, Result};
 use crate::gate_decomposition::arbitrary_rotation_matrix;
 use crate::gates::GateOperation;
+use crate::linalg::{LinalgBackend, LinalgResult};
 use crate::parameter::Parameter;
 use ndarray::Array2;
 use num_complex::Complex64;
@@ -266,6 +267,20 @@ impl GateOperation for ExtendedGate {
                 "Gate matrix not implemented yet",
             )),
         }
+    }
+
+    fn matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        &self,
+        params: &[Parameter],
+        symbols: &HashMap<String, f64>,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        let nda = self
+            .matrix(params, symbols)
+            .map_err(|e| crate::linalg::LinalgError::BackendError(e.to_string()))?;
+        let (r, c) = nda.dim();
+        let data: Vec<Complex64> = nda.iter().copied().collect();
+        backend.from_shape_vec(r, c, data)
     }
 }
 

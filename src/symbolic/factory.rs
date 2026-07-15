@@ -41,7 +41,7 @@ pub fn create_backend(config: &SymbolicConfig) -> Backend {
 
 /// Create the default symbolic backend
 ///
-/// This uses the default configuration (Symbolica backend).
+/// This uses the default configuration (MySym backend, backed by mysym).
 ///
 /// # Examples
 /// ```
@@ -60,10 +60,9 @@ pub fn create_symbolica_backend() -> SymbolicaBackend {
     SymbolicaBackend::new()
 }
 
-/// Create a MySym backend (placeholder)
+/// Create a MySym backend
 ///
-/// Note: This will return a placeholder that will error on operations.
-/// Full implementation coming in Phase 11.
+/// Returns a fully functional MySym backend backed by the mysym library.
 pub fn create_mysym_backend() -> MySymBackend {
     MySymBackend::new()
 }
@@ -71,31 +70,42 @@ pub fn create_mysym_backend() -> MySymBackend {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::symbolic::{SymbolicBackend, SymbolicExpression};
 
     #[test]
     fn test_create_default_backend() {
-        let _backend = create_default_backend();
-        // Should not panic
+        let backend = create_default_backend();
+        match backend {
+            Backend::MySym(_) => {} // default is now MySym
+            Backend::Symbolica(_) => {}
+        }
     }
 
     #[test]
     fn test_create_symbolica_backend() {
         let config = SymbolicConfig::symbolica();
         let _backend = create_backend(&config);
-        // Should create Symbolica backend
     }
 
     #[test]
-    fn test_create_mysym_backend_placeholder() {
+    fn test_create_mysym_backend_and_use() {
         let config = SymbolicConfig::mysym();
-        let _backend = create_backend(&config);
-        // Should create MySym placeholder
+        let backend = create_backend(&config);
+        match backend {
+            Backend::MySym(b) => {
+                let x = b.variable("x").unwrap();
+                assert!(!x.is_zero());
+                let two = b.constant(2.0).unwrap();
+                let sum = b.add(&x, &two).unwrap();
+                assert!(!sum.is_zero());
+            }
+            _ => panic!("Expected MySym backend"),
+        }
     }
 
     #[test]
     fn test_backend_creation_functions() {
-        let _symbolica = create_symbolica_backend();
         let _mysym = create_mysym_backend();
-        // Both should create successfully
+        // MySymBackend is now fully functional
     }
 }

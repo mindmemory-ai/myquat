@@ -3,6 +3,7 @@
 //! This module provides support for mixed quantum states using density matrices,
 //! including decoherence and open quantum system simulation.
 
+use crate::linalg::{LinalgBackend, NdArrayBackend};
 use crate::{GateOperation, MyQuatError, Parameter, QuantumCircuit, Result, StandardGate};
 use nalgebra::{Complex as NaComplex, Matrix2};
 use ndarray::{s, Array1, Array2};
@@ -158,11 +159,9 @@ impl DensityMatrix {
     /// Uses Hermitian eigenvalue decomposition (LAPACK) for numerical stability.
     /// Returns eigenvalues in ascending order.
     pub fn eigenvalues(&self) -> Vec<f64> {
-        use ndarray_linalg::Eigh;
-
-        // Density matrix is Hermitian, use eigh for better performance
-        match self.matrix.clone().eigh(ndarray_linalg::UPLO::Lower) {
-            Ok((eigenvalues, _)) => eigenvalues.to_vec(),
+        let backend = NdArrayBackend::new();
+        match backend.eigh(&self.matrix) {
+            Ok((eigenvalues, _)) => eigenvalues,
             Err(_) => {
                 // Fallback: return diagonal elements if decomposition fails
                 self.matrix.diag().iter().map(|c| c.re).collect()
@@ -488,15 +487,15 @@ impl DensityMatrix {
         // F = [Tr(√(√ρ σ √ρ))]²
 
         // Step 1: Compute √ρ using eigenvalue decomposition
-        let (eigenvalues, eigenvectors) =
-            match self.matrix.clone().eigh(ndarray_linalg::UPLO::Lower) {
-                Ok(result) => result,
-                Err(_) => {
-                    return Err(MyQuatError::circuit_error(
-                        "Failed to compute eigenvalue decomposition",
-                    ))
-                }
-            };
+        let backend = crate::linalg::NdArrayBackend::new();
+        let (eigenvalues, eigenvectors) = match backend.eigh(&self.matrix) {
+            Ok(result) => result,
+            Err(_) => {
+                return Err(MyQuatError::circuit_error(
+                    "Failed to compute eigenvalue decomposition",
+                ))
+            }
+        };
 
         // Construct √ρ = V √Λ V†
         let mut sqrt_rho = Array2::zeros(self.matrix.dim());
@@ -519,7 +518,8 @@ impl DensityMatrix {
         let temp = sqrt_rho.dot(&other.matrix).dot(&sqrt_rho);
 
         // Step 3: Compute eigenvalues and sum their square roots
-        let (temp_eigenvalues, _) = match temp.eigh(ndarray_linalg::UPLO::Lower) {
+        let backend = crate::linalg::NdArrayBackend::new();
+        let (temp_eigenvalues, _) = match backend.eigh(&temp) {
             Ok(result) => result,
             Err(_) => return Err(MyQuatError::circuit_error("Failed to compute eigenvalues")),
         };
@@ -533,24 +533,14 @@ impl DensityMatrix {
     }
 }
 
-/// Compute Kronecker product of two matrices
-///
-/// Optimized implementation using block assignment for better performance.
+/// Compute Kronecker product of two matrices.
+/// Delegates to `NdArrayBackend::kronecker()` (block-assignment optimized).
 fn kron(a: &Array2<Complex64>, b: &Array2<Complex64>) -> Array2<Complex64> {
-    let (m, n) = a.dim();
-    let (p, q) = b.dim();
-    let mut result = Array2::zeros((m * p, n * q));
-
-    for i in 0..m {
-        for j in 0..n {
-            let block = b * a[[i, j]];
-            result
-                .slice_mut(s![i * p..(i + 1) * p, j * q..(j + 1) * q])
-                .assign(&block);
-        }
-    }
-
-    result
+    use crate::linalg::NdArrayBackend;
+    let backend = NdArrayBackend::new();
+    backend
+        .kronecker(a, b)
+        .expect("Kronecker product should not fail for valid matrices")
 }
 
 /// Combine states for partial trace calculation

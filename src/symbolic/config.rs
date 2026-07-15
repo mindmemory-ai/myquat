@@ -10,11 +10,11 @@ use std::fmt;
 /// Available symbolic computation backends
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, Default)]
 pub enum BackendType {
-    /// Symbolica library backend (current default)
+    /// MySym library backend (mysym v0.3.0 — default)
     #[default]
-    Symbolica,
-    /// MySym library backend (to be implemented)
     MySym,
+    /// Symbolica library backend (alternative)
+    Symbolica,
 }
 
 impl fmt::Display for BackendType {
@@ -98,7 +98,7 @@ mod tests {
     #[test]
     fn test_default_config() {
         let config = SymbolicConfig::default();
-        assert_eq!(config.backend, BackendType::Symbolica);
+        assert_eq!(config.backend, BackendType::MySym);
         assert!(config.auto_simplify);
         assert_eq!(config.max_recursion_depth, 1000);
         assert!(config.enable_caching);

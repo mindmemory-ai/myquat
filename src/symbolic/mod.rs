@@ -59,6 +59,6 @@ pub use symbolica_adapter::SymbolicaBackend;
 ///
 /// let backend = default_backend();
 /// ```
-pub fn default_backend() -> SymbolicaBackend {
-    SymbolicaBackend::new()
+pub fn default_backend() -> MySymBackend {
+    MySymBackend::new()
 }

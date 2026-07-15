@@ -1,6 +1,6 @@
 [package]
 name = "myquat"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 rust-version = "1.79"
 license = "Apache-2.0"
@@ -20,10 +20,13 @@ exclude = [
 ]
 
 [dependencies]
+mymat = { path = "../mymat" }
 num-complex = "0.4"
 num-traits = "0.2"
 nalgebra = "0.33"
 ndarray = { version = "0.15", features = ["rayon"] }
+mysym = { path = "../mysym/mysym" }
+mysym-linalg = { path = "../mysym/mysym-linalg" }
 ndarray-linalg = { version = "0.16", default-features = false, features = ["openblas-system"] }
 # default-features=false prevents the "openblas" default feature which
 # would trigger openblas-build→ureq TLS issues. Only "openblas-system"

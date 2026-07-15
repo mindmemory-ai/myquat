@@ -27,6 +27,7 @@
 // $$ R(\hat{n}, \theta) = \cos(\theta/2)I - i\sin(\theta/2)(n_x\sigma_x + n_y\sigma_y + n_z\sigma_z) $$
 
 use crate::error::{MyQuatError, Result};
+use crate::linalg::{LinalgBackend, LinalgResult, NdArrayBackend};
 use ndarray::Array2;
 use num_complex::Complex64;
 use std::f64::consts::PI;
@@ -381,6 +382,41 @@ pub fn zyz_to_matrix(angles: &ZYZAngles) -> Array2<Complex64> {
     matrix[[1, 1]] = global_factor * phase_11 * cos_half;
 
     matrix
+}
+
+/// Compute the ZYZ matrix using a linear algebra backend
+pub fn zyz_to_matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+    angles: &ZYZAngles,
+    backend: &B,
+) -> LinalgResult<B::Matrix> {
+    let nda = zyz_to_matrix(angles);
+    let (r, c) = nda.dim();
+    let data: Vec<Complex64> = nda.iter().copied().collect();
+    backend.from_shape_vec(r, c, data)
+}
+
+/// ZYZ decomposition using a linear algebra backend
+pub fn zyz_decomposition_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+    matrix: &B::Matrix,
+    backend: &B,
+) -> LinalgResult<ZYZAngles> {
+    let u00 = backend.get_matrix(matrix, 0, 0)?;
+    let u01 = backend.get_matrix(matrix, 0, 1)?;
+    let u10 = backend.get_matrix(matrix, 1, 0)?;
+    let u11 = backend.get_matrix(matrix, 1, 1)?;
+    let det = u00 * u11 - u01 * u10;
+    let global_phase = det.arg() / 2.0;
+    let theta = 2.0 * u00.norm().acos();
+    let phi_plus_lambda = 2.0 * u00.arg();
+    let phi_minus_lambda = 2.0 * (-u10).arg();
+    let phi = (phi_plus_lambda + phi_minus_lambda) / 2.0;
+    let lambda = (phi_plus_lambda - phi_minus_lambda) / 2.0;
+    Ok(ZYZAngles::with_global_phase(
+        phi,
+        theta,
+        lambda,
+        global_phase,
+    ))
 }
 
 /// Verify that a ZYZ decomposition is correct

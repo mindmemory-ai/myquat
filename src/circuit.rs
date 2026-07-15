@@ -95,6 +95,7 @@
 
 use crate::error::{MyQuatError, Result};
 use crate::gates::{Gate, GateOperation, StandardGate};
+use crate::linalg::{LinalgBackend, LinalgResult, NdArrayBackend};
 use crate::parameter::Parameter;
 use ndarray::Array2;
 use num_complex::Complex64;
@@ -762,6 +763,20 @@ impl QuantumCircuit {
         }
 
         Ok(unitary)
+    }
+
+    /// Compute the circuit unitary using a linear algebra backend
+    pub fn unitary_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        &self,
+        symbols: &HashMap<String, f64>,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        let nda = self
+            .unitary(symbols)
+            .map_err(|e| crate::linalg::LinalgError::BackendError(e.to_string()))?;
+        let (r, c) = nda.dim();
+        let data: Vec<Complex64> = nda.iter().copied().collect();
+        backend.from_shape_vec(r, c, data)
     }
 
     /// Expand a gate matrix to act on the full circuit space

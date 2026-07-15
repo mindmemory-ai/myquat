@@ -14,6 +14,7 @@
 // - This is the canonical KAK (Cartan) decomposition
 
 use crate::error::{MyQuatError, Result};
+use crate::linalg::{LinalgBackend, LinalgError, LinalgResult, NdArrayBackend};
 use ndarray::{Array2, ArrayView2};
 use num_complex::Complex64;
 use std::f64::consts::PI;
@@ -168,6 +169,20 @@ impl TwoQubitDecomposer {
             num_basis_gates,
             k_matrix,
         })
+    }
+
+    /// Decompose a two-qubit unitary, returning a `LinalgResult`.
+    ///
+    /// This is a thin wrapper over `decompose()` that returns `LinalgResult`
+    /// instead of `Result<MyQuatError>`, for consistency with the `LinalgBackend`
+    /// error type. The input is still an `ArrayView2` since the KAK pipeline
+    /// internally uses nalgebra for Schur/SVD decomposition.
+    pub fn decompose_with_backend(
+        &self,
+        unitary: &ndarray::ArrayView2<Complex64>,
+    ) -> LinalgResult<KAKDecomposition> {
+        self.decompose(*unitary)
+            .map_err(|e| LinalgError::BackendError(e.to_string()))
     }
 
     /// Transform unitary to "magic" basis where KAK decomposition is natural

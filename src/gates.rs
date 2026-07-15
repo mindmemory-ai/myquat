@@ -4,6 +4,7 @@
 //! standard gates, custom gates, and gate matrices.
 
 use crate::error::{MyQuatError, Result};
+use crate::linalg::{LinalgBackend, LinalgResult, NdArrayBackend};
 use crate::parameter::Parameter;
 use crate::{constants::*, Complex};
 use ndarray::Array2;
@@ -29,6 +30,17 @@ pub trait GateOperation {
         params: &[Parameter],
         symbols: &HashMap<String, f64>,
     ) -> Result<Array2<Complex64>>;
+
+    /// Get the gate matrix using a linear algebra backend.
+    /// The default implementation converts via ndarray; override for native performance.
+    fn matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        &self,
+        params: &[Parameter],
+        symbols: &HashMap<String, f64>,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix>
+    where
+        Self: Sized;
 
     /// Check if this gate is its own inverse
     fn is_self_inverse(&self) -> bool {
@@ -571,6 +583,22 @@ impl GateOperation for StandardGate {
         }
     }
 
+    fn matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        &self,
+        params: &[Parameter],
+        symbols: &HashMap<String, f64>,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        // Delegate to the ndarray-based matrix() then convert via backend.
+        // Gate matrices are small (2x2, 4x4, 8x8) so the copy is negligible.
+        let nda = self
+            .matrix(params, symbols)
+            .map_err(|e| crate::linalg::LinalgError::BackendError(e.to_string()))?;
+        let (r, c) = nda.dim();
+        let data: Vec<Complex64> = nda.iter().copied().collect();
+        backend.from_shape_vec(r, c, data)
+    }
+
     fn is_self_inverse(&self) -> bool {
         matches!(
             self,
@@ -640,6 +668,16 @@ impl Gate {
     /// Get the gate matrix
     pub fn matrix(&self, symbols: &HashMap<String, f64>) -> Result<Array2<Complex64>> {
         self.gate_type.matrix(&self.parameters, symbols)
+    }
+
+    /// Get the gate matrix using the provided linear algebra backend
+    pub fn matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        &self,
+        symbols: &HashMap<String, f64>,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        self.gate_type
+            .matrix_with_backend(&self.parameters, symbols, backend)
     }
 
     /// Check if this gate is parametric (has symbolic parameters)
@@ -1119,23 +1157,22 @@ impl Gate {
 pub struct GateMatrix;
 
 impl GateMatrix {
-    /// Compute the tensor product of two matrices
+    /// Compute the tensor (Kronecker) product of two matrices.
+    /// Delegates to `NdArrayBackend::kronecker()`.
     pub fn tensor_product(a: &Array2<Complex64>, b: &Array2<Complex64>) -> Array2<Complex64> {
-        let (a_rows, a_cols) = a.dim();
-        let (b_rows, b_cols) = b.dim();
-        let mut result = Array2::zeros((a_rows * b_rows, a_cols * b_cols));
+        let backend = NdArrayBackend::new();
+        backend
+            .kronecker(a, b)
+            .expect("Kronecker product should not fail for valid matrices")
+    }
 
-        for i in 0..a_rows {
-            for j in 0..a_cols {
-                for k in 0..b_rows {
-                    for l in 0..b_cols {
-                        result[[i * b_rows + k, j * b_cols + l]] = a[[i, j]] * b[[k, l]];
-                    }
-                }
-            }
-        }
-
-        result
+    /// Compute the tensor product using the provided linear algebra backend
+    pub fn tensor_product_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        a: &B::Matrix,
+        b: &B::Matrix,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        backend.kronecker(a, b)
     }
 
     /// Check if a matrix is unitary (within tolerance)

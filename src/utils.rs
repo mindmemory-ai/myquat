@@ -6,6 +6,7 @@
 use crate::circuit::QuantumCircuit;
 use crate::error::{MyQuatError, Result};
 use crate::gates::GateOperation;
+use crate::linalg::{LinalgBackend, LinalgResult, LinalgScalar, NdArrayBackend};
 use ndarray::Array2;
 use num_complex::Complex64;
 use std::f64::consts::PI;
@@ -181,23 +182,74 @@ impl MatrixUtils {
         Array2::eye(n).mapv(|x| Complex64::new(x, 0.0))
     }
 
-    /// Compute the tensor product of two matrices
+    /// Compute the tensor product of two matrices.
+    /// Delegates to `NdArrayBackend::kronecker()`.
     pub fn tensor_product(a: &Array2<Complex64>, b: &Array2<Complex64>) -> Array2<Complex64> {
-        let (a_rows, a_cols) = a.dim();
-        let (b_rows, b_cols) = b.dim();
-        let mut result = Array2::zeros((a_rows * b_rows, a_cols * b_cols));
+        let backend = NdArrayBackend::new();
+        backend
+            .kronecker(a, b)
+            .expect("Kronecker product should not fail for valid matrices")
+    }
 
-        for i in 0..a_rows {
-            for j in 0..a_cols {
-                for k in 0..b_rows {
-                    for l in 0..b_cols {
-                        result[[i * b_rows + k, j * b_cols + l]] = a[[i, j]] * b[[k, l]];
-                    }
+    // ─── Backend-generic variants ─────────────────────────────────────────
+
+    /// Check if a matrix is unitary, using a backend (avoids ndarray dependency)
+    pub fn is_unitary_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        matrix: &B::Matrix,
+        tolerance: f64,
+        backend: &B,
+    ) -> LinalgResult<bool> {
+        let cb = backend.conjugate_transpose(matrix)?;
+        let product = backend.dot(matrix, &cb)?;
+        let n = backend.nrows(matrix);
+        let id = backend.complex_identity(n)?;
+        for i in 0..n {
+            for j in 0..n {
+                let diff = backend.get_matrix(&product, i, j)?;
+                let expected = backend.get_matrix(&id, i, j)?;
+                if (diff - expected).norm() > tolerance {
+                    return Ok(false);
                 }
             }
         }
+        Ok(true)
+    }
 
-        result
+    /// Compute the trace using a backend
+    pub fn trace_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        matrix: &B::Matrix,
+        backend: &B,
+    ) -> LinalgResult<Complex64> {
+        let n = backend.nrows(matrix).min(backend.ncols(matrix));
+        let mut sum = Complex64::zero();
+        for i in 0..n {
+            sum = sum + backend.get_matrix(matrix, i, i)?;
+        }
+        Ok(sum)
+    }
+
+    /// Compute the Frobenius norm using a backend
+    pub fn frobenius_norm_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        matrix: &B::Matrix,
+        backend: &B,
+    ) -> LinalgResult<f64> {
+        let mut sum_sq = 0.0f64;
+        let (r, c) = backend.dim(matrix);
+        for i in 0..r {
+            for j in 0..c {
+                sum_sq += backend.get_matrix(matrix, i, j)?.norm_sqr();
+            }
+        }
+        Ok(sum_sq.sqrt())
+    }
+
+    /// Compute the tensor product using a backend
+    pub fn tensor_product_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        a: &B::Matrix,
+        b: &B::Matrix,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        backend.kronecker(a, b)
     }
 }
 

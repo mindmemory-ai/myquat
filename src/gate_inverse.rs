@@ -5,6 +5,7 @@
 
 use crate::error::{MyQuatError, Result};
 use crate::gates::{Gate, StandardGate};
+use crate::linalg::{LinalgBackend, LinalgResult, NdArrayBackend};
 use crate::parameter::Parameter;
 use ndarray::Array2;
 use num_complex::Complex64;
@@ -176,9 +177,21 @@ impl GateInverse {
         Ok(is_identity)
     }
 
-    /// Compute the adjoint (Hermitian conjugate) of a matrix
+    /// Compute the adjoint (Hermitian conjugate) of a matrix.
+    /// Delegates to `NdArrayBackend::conjugate_transpose()`.
     pub fn adjoint_matrix(matrix: &Array2<Complex64>) -> Array2<Complex64> {
-        matrix.mapv(|z| z.conj()).t().to_owned()
+        let backend = NdArrayBackend::new();
+        backend
+            .conjugate_transpose(matrix)
+            .expect("Conjugate transpose should not fail for valid matrices")
+    }
+
+    /// Compute the adjoint using a linear algebra backend
+    pub fn adjoint_matrix_with_backend<B: LinalgBackend<Scalar = Complex64>>(
+        matrix: &B::Matrix,
+        backend: &B,
+    ) -> LinalgResult<B::Matrix> {
+        backend.conjugate_transpose(matrix)
     }
 }
 

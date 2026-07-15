@@ -4,6 +4,7 @@
 //! real quantum devices, including decoherence, gate errors, and measurement errors.
 
 use crate::density_matrix::DensityMatrix;
+use crate::linalg::{LinalgBackend, NdArrayBackend};
 use crate::{MyQuatError, Result};
 use ndarray::Array2;
 use num_complex::Complex64;
@@ -285,21 +286,13 @@ pub struct DepolarizingChannel {
     pub probability: f64,
 }
 
-/// Kronecker product of two matrices
+/// Kronecker product of two matrices.
+/// Delegates to `NdArrayBackend::kronecker()`.
 fn kron(a: &Array2<Complex64>, b: &Array2<Complex64>) -> Array2<Complex64> {
-    let (m, n) = a.dim();
-    let (p, q) = b.dim();
-    let mut result = Array2::zeros((m * p, n * q));
-    for i in 0..m {
-        for j in 0..n {
-            for bi in 0..p {
-                for bj in 0..q {
-                    result[[i * p + bi, j * q + bj]] = a[[i, j]] * b[[bi, bj]];
-                }
-            }
-        }
-    }
-    result
+    let backend = NdArrayBackend::new();
+    backend
+        .kronecker(a, b)
+        .expect("Kronecker product should not fail for valid matrices")
 }
 
 impl DepolarizingChannel {
